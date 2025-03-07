@@ -1,15 +1,24 @@
 using FluentValidation;
 using Microsoft.EntityFrameworkCore;
 using TaskManagement.Infrastructure.Data;
-using MediatR;
 using TaskManagement.Application.Features.Tasks.Handlers;
 using TaskManagement.Application.Interfaces;
 using TaskManagement.Application.MappingProfiles;
 using TaskManagement.Application.Validators;
 using TaskManagement.WebAPI.Middlewares;
+using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
-var configuration = builder.Configuration; // ✅ Добавляем конфигурацию
+var configuration = builder.Configuration; // Добавляем конфигурацию
+
+// Настроил Serilog
+Log.Logger = new LoggerConfiguration()
+    .WriteTo.Console() // Логирование в консоль
+    .WriteTo.File("logs/log-.txt", rollingInterval: RollingInterval.Day) // Логирование в файл
+    .CreateLogger();
+
+// Подключаем Serilog к приложению
+builder.Host.UseSerilog();
 
 // Подключаем PostgreSQL
 builder.Services.AddDbContext<IAppDbContext, AppDbContext>(options =>

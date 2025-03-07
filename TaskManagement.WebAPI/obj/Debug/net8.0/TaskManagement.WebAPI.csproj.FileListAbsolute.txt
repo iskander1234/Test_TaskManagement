@@ -144,3 +144,16 @@ C:\С#\Test_TaskManagement\TaskManagement.WebAPI\bin\Debug\net8.0\zh-Hant\Micros
 C:\С#\Test_TaskManagement\TaskManagement.WebAPI\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
 C:\С#\Test_TaskManagement\TaskManagement.WebAPI\bin\Debug\net8.0\AutoMapper.dll
 C:\С#\Test_TaskManagement\TaskManagement.WebAPI\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\С#\Test_TaskManagement\TaskManagement.WebAPI\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Binder.dll
+C:\С#\Test_TaskManagement\TaskManagement.WebAPI\bin\Debug\net8.0\Microsoft.Extensions.Diagnostics.Abstractions.dll
+C:\С#\Test_TaskManagement\TaskManagement.WebAPI\bin\Debug\net8.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\С#\Test_TaskManagement\TaskManagement.WebAPI\bin\Debug\net8.0\Microsoft.Extensions.Hosting.Abstractions.dll
+C:\С#\Test_TaskManagement\TaskManagement.WebAPI\bin\Debug\net8.0\Serilog.dll
+C:\С#\Test_TaskManagement\TaskManagement.WebAPI\bin\Debug\net8.0\Serilog.AspNetCore.dll
+C:\С#\Test_TaskManagement\TaskManagement.WebAPI\bin\Debug\net8.0\Serilog.Extensions.Hosting.dll
+C:\С#\Test_TaskManagement\TaskManagement.WebAPI\bin\Debug\net8.0\Serilog.Extensions.Logging.dll
+C:\С#\Test_TaskManagement\TaskManagement.WebAPI\bin\Debug\net8.0\Serilog.Formatting.Compact.dll
+C:\С#\Test_TaskManagement\TaskManagement.WebAPI\bin\Debug\net8.0\Serilog.Settings.Configuration.dll
+C:\С#\Test_TaskManagement\TaskManagement.WebAPI\bin\Debug\net8.0\Serilog.Sinks.Console.dll
+C:\С#\Test_TaskManagement\TaskManagement.WebAPI\bin\Debug\net8.0\Serilog.Sinks.Debug.dll
+C:\С#\Test_TaskManagement\TaskManagement.WebAPI\bin\Debug\net8.0\Serilog.Sinks.File.dll
