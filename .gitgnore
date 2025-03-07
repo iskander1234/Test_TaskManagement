@@ -1,0 +1,12 @@
+bin/
+obj/
+/packages/
+
+/appsettings.json
+
+# JetBrains Rider
+.idea/
+*.sln.iml
+
+*logs.txt
+*nuget.config
