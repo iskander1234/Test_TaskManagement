@@ -1,0 +1,17 @@
+C:\С#\Test_TaskManagement\TaskManagement.Infrastructure\bin\Debug\net8.0\TaskManagement.Infrastructure.deps.json
+C:\С#\Test_TaskManagement\TaskManagement.Infrastructure\bin\Debug\net8.0\TaskManagement.Infrastructure.runtimeconfig.json
+C:\С#\Test_TaskManagement\TaskManagement.Infrastructure\bin\Debug\net8.0\TaskManagement.Infrastructure.dll
+C:\С#\Test_TaskManagement\TaskManagement.Infrastructure\bin\Debug\net8.0\TaskManagement.Infrastructure.pdb
+C:\С#\Test_TaskManagement\TaskManagement.Infrastructure\bin\Debug\net8.0\TaskManagement.Application.dll
+C:\С#\Test_TaskManagement\TaskManagement.Infrastructure\bin\Debug\net8.0\TaskManagement.Application.pdb
+C:\С#\Test_TaskManagement\TaskManagement.Infrastructure\obj\Debug\net8.0\TaskManagement.Infrastructure.csproj.AssemblyReference.cache
+C:\С#\Test_TaskManagement\TaskManagement.Infrastructure\obj\Debug\net8.0\TaskManagement.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\С#\Test_TaskManagement\TaskManagement.Infrastructure\obj\Debug\net8.0\TaskManagement.Infrastructure.AssemblyInfoInputs.cache
+C:\С#\Test_TaskManagement\TaskManagement.Infrastructure\obj\Debug\net8.0\TaskManagement.Infrastructure.AssemblyInfo.cs
+C:\С#\Test_TaskManagement\TaskManagement.Infrastructure\obj\Debug\net8.0\TaskManagement.Infrastructure.csproj.CoreCompileInputs.cache
+C:\С#\Test_TaskManagement\TaskManagement.Infrastructure\obj\Debug\net8.0\TaskMana.BCA0E1A6.Up2Date
+C:\С#\Test_TaskManagement\TaskManagement.Infrastructure\obj\Debug\net8.0\TaskManagement.Infrastructure.dll
+C:\С#\Test_TaskManagement\TaskManagement.Infrastructure\obj\Debug\net8.0\refint\TaskManagement.Infrastructure.dll
+C:\С#\Test_TaskManagement\TaskManagement.Infrastructure\obj\Debug\net8.0\TaskManagement.Infrastructure.pdb
+C:\С#\Test_TaskManagement\TaskManagement.Infrastructure\obj\Debug\net8.0\TaskManagement.Infrastructure.genruntimeconfig.cache
+C:\С#\Test_TaskManagement\TaskManagement.Infrastructure\obj\Debug\net8.0\ref\TaskManagement.Infrastructure.dll

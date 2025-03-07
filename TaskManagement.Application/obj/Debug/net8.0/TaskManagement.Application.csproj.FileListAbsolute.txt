@@ -1,0 +1,12 @@
+C:\С#\Test_TaskManagement\TaskManagement.Application\bin\Debug\net8.0\TaskManagement.Application.deps.json
+C:\С#\Test_TaskManagement\TaskManagement.Application\bin\Debug\net8.0\TaskManagement.Application.dll
+C:\С#\Test_TaskManagement\TaskManagement.Application\bin\Debug\net8.0\TaskManagement.Application.pdb
+C:\С#\Test_TaskManagement\TaskManagement.Application\obj\Debug\net8.0\TaskManagement.Application.csproj.AssemblyReference.cache
+C:\С#\Test_TaskManagement\TaskManagement.Application\obj\Debug\net8.0\TaskManagement.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\С#\Test_TaskManagement\TaskManagement.Application\obj\Debug\net8.0\TaskManagement.Application.AssemblyInfoInputs.cache
+C:\С#\Test_TaskManagement\TaskManagement.Application\obj\Debug\net8.0\TaskManagement.Application.AssemblyInfo.cs
+C:\С#\Test_TaskManagement\TaskManagement.Application\obj\Debug\net8.0\TaskManagement.Application.csproj.CoreCompileInputs.cache
+C:\С#\Test_TaskManagement\TaskManagement.Application\obj\Debug\net8.0\TaskManagement.Application.dll
+C:\С#\Test_TaskManagement\TaskManagement.Application\obj\Debug\net8.0\refint\TaskManagement.Application.dll
+C:\С#\Test_TaskManagement\TaskManagement.Application\obj\Debug\net8.0\TaskManagement.Application.pdb
+C:\С#\Test_TaskManagement\TaskManagement.Application\obj\Debug\net8.0\ref\TaskManagement.Application.dll
