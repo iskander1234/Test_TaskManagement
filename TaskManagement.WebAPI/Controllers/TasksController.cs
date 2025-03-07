@@ -1,6 +1,7 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using TaskManagement.Application.Features.Tasks.Commands;
+using TaskManagement.Application.Features.Tasks.Queries;
 
 namespace TaskManagement.WebAPI.Controllers;
 
@@ -23,8 +24,46 @@ public class TasksController : ControllerBase
     }
 
     [HttpGet("{id}")]
-    public IActionResult GetTaskById(Guid id)
+    public async Task<IActionResult> GetTaskById(Guid id)
     {
-        return Ok($"Stub for getting task {id}");
+        var task = await _mediator.Send(new GetTaskByIdQuery(id));
+        if (task == null) return NotFound();
+        return Ok(task);
     }
+    
+    [HttpGet]
+    public async Task<IActionResult> GetAllTasks([FromQuery] TaskStatus? status)
+    {
+        var query = new GetAllTasksQuery(status);
+        var tasks = await _mediator.Send(query);
+        return Ok(tasks);
+    }
+    
+    [HttpPut("{id}")]
+    public async Task<IActionResult> UpdateTask(Guid id, [FromBody] UpdateTaskCommand command)
+    {
+        if (id != command.Id)
+        {
+            return BadRequest("ID mismatch");
+        }
+
+        var success = await _mediator.Send(command);
+        if (!success)
+        {
+            return NotFound();
+        }
+
+        return NoContent();
+    }
+
+    
+    [HttpDelete("{id}")]
+    public async Task<IActionResult> DeleteTask(Guid id)
+    {
+        var result = await _mediator.Send(new DeleteTaskCommand(id));
+        if (!result) return NotFound();
+        return NoContent();
+    }
+
+
 }
