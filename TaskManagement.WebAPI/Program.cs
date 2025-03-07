@@ -6,6 +6,7 @@ using TaskManagement.Application.Features.Tasks.Handlers;
 using TaskManagement.Application.Interfaces;
 using TaskManagement.Application.MappingProfiles;
 using TaskManagement.Application.Validators;
+using TaskManagement.WebAPI.Middlewares;
 
 var builder = WebApplication.CreateBuilder(args);
 var configuration = builder.Configuration; // ✅ Добавляем конфигурацию
@@ -23,6 +24,7 @@ builder.Services.AddValidatorsFromAssembly(typeof(CreateTaskCommandValidator).As
 // Подключаем AutoMapper
 builder.Services.AddAutoMapper(typeof(TaskProfile));
 
+
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -34,6 +36,9 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+// Подключаем Middleware
+app.UseMiddleware<ValidationExceptionMiddleware>();
 
 app.UseHttpsRedirection();
 app.UseAuthorization();
