@@ -1,42 +1,26 @@
-using FluentValidation;
-using Microsoft.EntityFrameworkCore;
-using TaskManagement.Infrastructure.Data;
-using TaskManagement.Application.Features.Tasks.Handlers;
-using TaskManagement.Application.Interfaces;
-using TaskManagement.Application.MappingProfiles;
-using TaskManagement.Application.Validators;
+using TaskManagement.Application;
+using TaskManagement.Infrastructure;
 using TaskManagement.WebAPI.Middlewares;
 using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
-var configuration = builder.Configuration; // Добавляем конфигурацию
+var configuration = builder.Configuration; 
 
-// Настроил Serilog
-Log.Logger = new LoggerConfiguration()
-    .WriteTo.Console() // Логирование в консоль
-    .WriteTo.File("logs/log-.txt", rollingInterval: RollingInterval.Day) // Логирование в файл
-    .CreateLogger();
+// Используем Dependency Injection из Application и Infrastructure
+builder.Services.AddApplication();
+builder.Services.AddInfrastructure(configuration);
 
-// Подключаем Serilog к приложению
-builder.Host.UseSerilog();
-
-// Подключаем PostgreSQL
-builder.Services.AddDbContext<IAppDbContext, AppDbContext>(options =>
-    options.UseNpgsql(configuration.GetConnectionString("DefaultConnection")));
-
-// Подключаем MediatR
-builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(CreateTaskCommandHandler).Assembly));
-
-// Подключаем FluentValidation
-builder.Services.AddValidatorsFromAssembly(typeof(CreateTaskCommandValidator).Assembly);
-
-// Подключаем AutoMapper
-builder.Services.AddAutoMapper(typeof(TaskProfile));
-
-
+// Добавляем контроллеры
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+// Используем Serilog
+builder.Host.UseSerilog((context, config) =>
+{
+    config.WriteTo.Console();
+    config.WriteTo.File("logs/log-.txt", rollingInterval: RollingInterval.Day);
+});
 
 var app = builder.Build();
 
@@ -46,7 +30,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-// Подключаем Middleware
+// Middleware для обработки ошибок
 app.UseMiddleware<ValidationExceptionMiddleware>();
 
 app.UseHttpsRedirection();
