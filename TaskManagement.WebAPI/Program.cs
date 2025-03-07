@@ -4,6 +4,7 @@ using TaskManagement.Infrastructure.Data;
 using MediatR;
 using TaskManagement.Application.Features.Tasks.Handlers;
 using TaskManagement.Application.Interfaces;
+using TaskManagement.Application.MappingProfiles;
 using TaskManagement.Application.Validators;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -18,6 +19,9 @@ builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(Creat
 
 // Подключаем FluentValidation
 builder.Services.AddValidatorsFromAssembly(typeof(CreateTaskCommandValidator).Assembly);
+
+// Подключаем AutoMapper
+builder.Services.AddAutoMapper(typeof(TaskProfile));
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
