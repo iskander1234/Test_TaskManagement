@@ -1,9 +1,9 @@
 # Task Management API
 
-## 📌 Описание проекта
+##  Описание проекта
 Task Management API — это RESTful API для управления задачами, разработанное с использованием **ASP.NET Core**, **PostgreSQL**, **Dapper**, **Entity Framework Core**, **Hangfire**, **RabbitMQ** и **SignalR**.
 
-### 🔧 Технологии и инструменты
+### Технологии и инструменты
 - **C# .NET 8**
 - **Entity Framework Core + Dapper** (работа с БД)
 - **PostgreSQL** (хранение данных)
@@ -16,18 +16,18 @@ Task Management API — это RESTful API для управления зада�
 - **Serilog** (логирование)
 - **SignalR** (уведомления в реальном времени)
 
-## 🚀 Установка и запуск
+## Установка и запуск
 
-### 1️⃣ Клонирование репозитория
+### 1 Клонирование репозитория
 ```sh
 git clone https://github.com/your-repo/task-management-api.git
 cd task-management-api
 ```
 
-### 2️⃣ Настройка базы данных PostgreSQL
+### 2️ Настройка базы данных PostgreSQL
 Создайте базу данных **TaskManagementDb2**.
 
-### 3️⃣ Конфигурация `appsettings.json`
+### 3️ Конфигурация `appsettings.json`
 ```json
 {
   "ConnectionStrings": {
@@ -46,25 +46,25 @@ cd task-management-api
 }
 ```
 
-### 4️⃣ Запуск миграций
+### 4️ Запуск миграций
 ```sh
 dotnet ef database update -p TaskManagement.Infrastructure -s TaskManagement.WebAPI
 ```
 
-### 5️⃣ Запуск API
+### 5️ Запуск API
 ```sh
 dotnet run --project TaskManagement.WebAPI
 ```
 
-## 📄 Документация API
+## Документация API
 После запуска откройте Swagger:
 ```
 http://localhost:5057/swagger/index.html
 ```
 
-## 🛠 Тестирование API через Postman
+## Тестирование API через Postman
 
-📥 **Импортируйте Postman Collection**:
+ **Импортируйте Postman Collection**:
 1. Откройте Postman.
 2. Перейдите в **File → Import**.
 3. Выберите `TaskManagement.postman_collection.json`.
@@ -72,7 +72,7 @@ http://localhost:5057/swagger/index.html
 
 Файл Postman Collection: **[TaskManagement.postman_collection.json](TaskManagement.postman_collection.json)**.
 
-## 🔗 Дополнительные инструменты
+## Дополнительные инструменты
 - **Hangfire Dashboard**: `http://localhost:5057/hangfire`
 - **RabbitMQ Management UI**: `http://localhost:15672/` (логин: `guest`, пароль: `guest`)
 - **SignalR Hub**: `http://localhost:5057/taskHub`
