@@ -56,7 +56,7 @@ public class CreateTaskCommandHandler : IRequestHandler<CreateTaskCommand, Guid>
         // Обновляем кэш
         string cacheKey = $"task_{task.Id}";
         await _cacheService.SetAsync(cacheKey, task, TimeSpan.FromMinutes(10));
-        Console.WriteLine($"📝 Сохранено в Redis: {cacheKey}");
+        Console.WriteLine($"Сохранено в Redis: {cacheKey}");
 
         return task.Id;
     }

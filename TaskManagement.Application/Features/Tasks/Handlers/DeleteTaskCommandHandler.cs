@@ -27,7 +27,7 @@ public class DeleteTaskCommandHandler : IRequestHandler<DeleteTaskCommand, bool>
         // Удаляем из Redis
         string cacheKey = $"task_{request.Id}";
         await _cacheService.RemoveAsync(cacheKey);
-        Console.WriteLine($"🗑 Удалено из Redis: {cacheKey}");
+        Console.WriteLine($"Удалено из Redis: {cacheKey}");
 
 
         return true;
