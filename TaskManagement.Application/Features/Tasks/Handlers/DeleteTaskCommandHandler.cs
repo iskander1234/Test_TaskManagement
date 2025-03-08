@@ -6,26 +6,30 @@ namespace TaskManagement.Application.Features.Tasks.Handlers;
 
 public class DeleteTaskCommandHandler : IRequestHandler<DeleteTaskCommand, bool>
 {
-    private readonly IAppDbContext _context;
-    private readonly ICacheService _cacheService; // Добавляем кэш
+    private readonly ITaskRepository _taskRepository;
+    private readonly ICacheService _cacheService;
 
-    public DeleteTaskCommandHandler(IAppDbContext context, ICacheService cacheService)
+    public DeleteTaskCommandHandler(ITaskRepository taskRepository, ICacheService cacheService)
     {
-        _context = context;
+        _taskRepository = taskRepository;
         _cacheService = cacheService;
     }
 
     public async Task<bool> Handle(DeleteTaskCommand request, CancellationToken cancellationToken)
     {
-        var task = await _context.Tasks.FindAsync(new object[] { request.Id }, cancellationToken);
-        if (task == null) return false;
+        // Проверяем, существует ли задача в БД
+        var task = await _taskRepository.GetByIdAsync(request.Id);
+        if (task is null) return false;
 
-        _context.Tasks.Remove(task);
-        await _context.SaveChangesAsync(cancellationToken);
-        
-        // Очистка кэша после удаления задачи
-        await _cacheService.RemoveAsync("tasks");
-        
+        // Удаляем задачу через Dapper
+        await _taskRepository.DeleteAsync(request.Id);
+
+        // Очищаем кэш
+        await _cacheService.RemoveAsync($"task_{request.Id}");
+        await _cacheService.RemoveAsync("tasks"); // Обновляем список всех задач
+
+        Console.WriteLine($"Задача {request.Id} удалена из БД и кэша!");
+
         return true;
     }
 }

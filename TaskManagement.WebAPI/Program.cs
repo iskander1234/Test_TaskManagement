@@ -6,16 +6,16 @@ using Serilog;
 var builder = WebApplication.CreateBuilder(args);
 var configuration = builder.Configuration; 
 
-// Используем Dependency Injection из Application и Infrastructure
+// ✅ Подключаем все уровни
 builder.Services.AddApplication();
 builder.Services.AddInfrastructure(configuration);
 
-// Добавляем контроллеры
+// ✅ Добавляем контроллеры
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-// Используем Serilog
+// ✅ Настраиваем Serilog
 builder.Host.UseSerilog((context, config) =>
 {
     config.WriteTo.Console();
@@ -30,7 +30,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-//  Middleware для обработки ошибок
+// ✅ Middleware для обработки ошибок
 app.UseMiddleware<ValidationExceptionMiddleware>();
 
 app.UseHttpsRedirection();

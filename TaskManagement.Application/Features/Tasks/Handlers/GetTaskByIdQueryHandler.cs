@@ -7,32 +7,34 @@ namespace TaskManagement.Application.Features.Tasks.Handlers;
 
 public class GetTaskByIdQueryHandler : IRequestHandler<GetTaskByIdQuery, TaskEntity?>
 {
-    private readonly IAppDbContext _context;
-    private readonly ICacheService _cacheService; // Подключаем сервис кэша
+    private readonly ITaskRepository _taskRepository;
+    private readonly ICacheService _cacheService;
 
-    public GetTaskByIdQueryHandler(IAppDbContext context, ICacheService cacheService)
+    public GetTaskByIdQueryHandler(ITaskRepository taskRepository, ICacheService cacheService)
     {
-        _context = context;
+        _taskRepository = taskRepository;
         _cacheService = cacheService;
     }
 
     public async Task<TaskEntity?> Handle(GetTaskByIdQuery request, CancellationToken cancellationToken)
     {
-        string cacheKey = $"tasks"; // Уникальный ключ для кэша
+        string cacheKey = $"task_{request.Id}";
 
-        // Проверяем кэш перед запросом в БД
+        // Проверяем кэш
         var cachedTask = await _cacheService.GetAsync<TaskEntity>(cacheKey);
-        if (cachedTask != null)
+        if (cachedTask is not null)
         {
-            return cachedTask; // Возвращаем кэшированный объект
+            Console.WriteLine($"Задача {request.Id} получена из кэша!");
+            return cachedTask;
         }
 
-        // Загружаем задачу из БД
-        var task = await _context.Tasks.FindAsync(new object[] { request.Id }, cancellationToken);
-        if (task == null) return null;
+        // Загружаем из БД
+        var task = await _taskRepository.GetByIdAsync(request.Id);
+        if (task is null) return null;
 
-        // Сохраняем в кэш (один объект, не список!)
+        // Кэшируем результат
         await _cacheService.SetAsync(cacheKey, task, TimeSpan.FromMinutes(10));
+        Console.WriteLine($"Задача {request.Id} сохранена в Redis!");
 
         return task;
     }

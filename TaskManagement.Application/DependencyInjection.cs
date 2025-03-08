@@ -2,8 +2,6 @@
 using FluentValidation;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace TaskManagement.Application;
-
 public static class DependencyInjection
 {
     public static void AddApplication(this IServiceCollection services)
@@ -16,5 +14,6 @@ public static class DependencyInjection
 
         // Регистрируем AutoMapper
         services.AddAutoMapper(Assembly.GetExecutingAssembly());
+        
     }
 }

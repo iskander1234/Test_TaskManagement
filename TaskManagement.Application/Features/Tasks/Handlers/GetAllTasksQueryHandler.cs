@@ -1,28 +1,36 @@
 ﻿using MediatR;
-using Microsoft.EntityFrameworkCore;
 using TaskManagement.Application.Entities;
 using TaskManagement.Application.Features.Tasks.Queries;
 using TaskManagement.Application.Interfaces;
-using TaskStatus = TaskManagement.Application.Entities.TaskStatus;
+using FluentValidation;
 
 namespace TaskManagement.Application.Features.Tasks.Handlers;
 
 public class GetAllTasksQueryHandler : IRequestHandler<GetAllTasksQuery, List<TaskEntity>>
 {
-    private readonly IAppDbContext _context;
-    private readonly ICacheService _cacheService; // Подключаем сервис кэша
+    private readonly ITaskRepository _taskRepository;
+    private readonly ICacheService _cacheService;
+    private readonly IValidator<GetAllTasksQuery> _validator;
 
-    public GetAllTasksQueryHandler(IAppDbContext context, ICacheService cacheService)
+    public GetAllTasksQueryHandler(ITaskRepository taskRepository, ICacheService cacheService, IValidator<GetAllTasksQuery> validator)
     {
-        _context = context;
+        _taskRepository = taskRepository;
         _cacheService = cacheService;
+        _validator = validator;
     }
 
     public async Task<List<TaskEntity>> Handle(GetAllTasksQuery request, CancellationToken cancellationToken)
     {
+        // Валидация
+        var validationResult = await _validator.ValidateAsync(request, cancellationToken);
+        if (!validationResult.IsValid)
+        {
+            throw new ValidationException(validationResult.Errors);
+        }
+
         string cacheKey = "tasks";
 
-        //Проверяем, есть ли данные в кэше
+        // Проверяем, есть ли данные в кэше
         var cachedTasks = await _cacheService.GetAsync<List<TaskEntity>>(cacheKey);
         if (cachedTasks is not null)
         {
@@ -30,19 +38,11 @@ public class GetAllTasksQueryHandler : IRequestHandler<GetAllTasksQuery, List<Ta
             return cachedTasks;
         }
 
-        // Данных нет, загружаем из БД
-        var query = _context.Tasks.AsQueryable();
+        // Загружаем из БД через Dapper
+        var tasks = (await _taskRepository.GetAllAsync()).ToList();
 
-        if (request.Status.HasValue)
-        {
-            query = query.Where(t => t.Status == (TaskStatus)request.Status.Value);
-        }
-
-        var tasks = await query.ToListAsync(cancellationToken);
-
-        //Сохраняем данные в Redis на 10 минут
+        // Кэшируем результат
         await _cacheService.SetAsync(cacheKey, tasks, TimeSpan.FromMinutes(10));
-
         Console.WriteLine("Данные сохранены в Redis!");
 
         return tasks;
