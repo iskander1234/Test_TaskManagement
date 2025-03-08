@@ -32,17 +32,25 @@ public class UpdateTaskCommandHandler : IRequestHandler<UpdateTaskCommand, bool>
         var task = await _taskRepository.GetByIdAsync(request.Id);
         if (task is null) return false;
 
+        //  Проверяем, изменился ли статус
+        if (task.Status != (TaskStatus)request.Status)
+        {
+            task.UpdatedAt = DateTime.UtcNow; // Обновляем UpdatedAt
+        }
+        
         // Обновляем данные
         task.Title = request.Title;
         task.Description = request.Description;
         task.Status = (TaskStatus)request.Status;
-        task.UpdatedAt = DateTime.UtcNow;
+        
 
         // Сохраняем в БД через Dapper
         await _taskRepository.UpdateAsync(task);
 
-        // Обновляем кэш
-        await _cacheService.SetAsync($"task_{request.Id}", task, TimeSpan.FromMinutes(10));
+        // Обновляем в Redis
+        string cacheKey = $"task_{task.Id}";
+        await _cacheService.SetAsync(cacheKey, task, TimeSpan.FromMinutes(10));
+        Console.WriteLine($"Обновлено в Redis: {cacheKey}");
 
         return true;
     }

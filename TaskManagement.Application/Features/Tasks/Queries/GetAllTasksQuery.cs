@@ -6,10 +6,10 @@ namespace TaskManagement.Application.Features.Tasks.Queries;
 
 public class GetAllTasksQuery : IRequest<List<TaskEntity>>
 {
-    public TaskStatus? Status { get; set; }
+    public int? Status { get; set; }
 
     public GetAllTasksQuery(TaskStatus? status)
     {
-        Status = status;
+        Status = (int?)status;
     }
 }

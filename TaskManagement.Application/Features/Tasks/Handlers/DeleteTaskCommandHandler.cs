@@ -24,11 +24,11 @@ public class DeleteTaskCommandHandler : IRequestHandler<DeleteTaskCommand, bool>
         // Удаляем задачу через Dapper
         await _taskRepository.DeleteAsync(request.Id);
 
-        // Очищаем кэш
-        await _cacheService.RemoveAsync($"task_{request.Id}");
-        await _cacheService.RemoveAsync("tasks"); // Обновляем список всех задач
+        // Удаляем из Redis
+        string cacheKey = $"task_{request.Id}";
+        await _cacheService.RemoveAsync(cacheKey);
+        Console.WriteLine($"🗑 Удалено из Redis: {cacheKey}");
 
-        Console.WriteLine($"Задача {request.Id} удалена из БД и кэша!");
 
         return true;
     }

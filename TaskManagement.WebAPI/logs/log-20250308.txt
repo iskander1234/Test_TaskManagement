@@ -1159,3 +1159,528 @@ VALUES ('20250308021101_InitialCreate', '9.0.2');
 2025-03-08 07:27:34.242 +05:00 [INF] Executed endpoint 'TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI)'
 2025-03-08 07:27:34.243 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/api/tasks?status=0 - 200 null application/json; charset=utf-8 18.908ms
 2025-03-08 07:27:43.693 +05:00 [INF] Application is shutting down...
+2025-03-08 14:49:01.842 +05:00 [INF] Now listening on: http://localhost:5057
+2025-03-08 14:49:01.889 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-08 14:49:01.891 +05:00 [INF] Hosting environment: Development
+2025-03-08 14:49:01.892 +05:00 [INF] Content root path: C:\С#\Test_TaskManagement\TaskManagement.WebAPI
+2025-03-08 14:49:02.253 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/swagger/index.html - null null
+2025-03-08 14:49:02.483 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/swagger/index.html - 200 null text/html;charset=utf-8 232.5163ms
+2025-03-08 14:49:02.613 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/swagger/v1/swagger.json - null null
+2025-03-08 14:49:02.819 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 206.2625ms
+2025-03-08 14:49:27.624 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5057/api/tasks - application/json 63
+2025-03-08 14:49:27.638 +05:00 [WRN] Failed to determine the https port for redirect.
+2025-03-08 14:49:27.644 +05:00 [INF] Executing endpoint 'TaskManagement.WebAPI.Controllers.TasksController.CreateTask (TaskManagement.WebAPI)'
+2025-03-08 14:49:27.690 +05:00 [INF] Route matched with {action = "CreateTask", controller = "Tasks"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateTask(TaskManagement.Application.Features.Tasks.Commands.CreateTaskCommand) on controller TaskManagement.WebAPI.Controllers.TasksController (TaskManagement.WebAPI).
+2025-03-08 14:49:27.774 +05:00 [INF] Executing action method TaskManagement.WebAPI.Controllers.TasksController.CreateTask (TaskManagement.WebAPI) - Validation state: "Valid"
+2025-03-08 14:49:28.445 +05:00 [INF] Executed action TaskManagement.WebAPI.Controllers.TasksController.CreateTask (TaskManagement.WebAPI) in 747.7015ms
+2025-03-08 14:49:28.449 +05:00 [INF] Executed endpoint 'TaskManagement.WebAPI.Controllers.TasksController.CreateTask (TaskManagement.WebAPI)'
+2025-03-08 14:49:28.483 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5057/api/tasks - 500 null application/json 859.2612ms
+2025-03-08 14:57:34.434 +05:00 [INF] Application is shutting down...
+2025-03-08 14:57:41.821 +05:00 [INF] Now listening on: http://localhost:5057
+2025-03-08 14:57:41.868 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-08 14:57:41.870 +05:00 [INF] Hosting environment: Development
+2025-03-08 14:57:41.871 +05:00 [INF] Content root path: C:\С#\Test_TaskManagement\TaskManagement.WebAPI
+2025-03-08 14:57:42.208 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/swagger/index.html - null null
+2025-03-08 14:57:42.498 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/swagger/index.html - 200 null text/html;charset=utf-8 291.9859ms
+2025-03-08 14:57:42.607 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/swagger/v1/swagger.json - null null
+2025-03-08 14:57:42.833 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 226.8371ms
+2025-03-08 14:57:57.170 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/api/tasks - null null
+2025-03-08 14:57:57.182 +05:00 [WRN] Failed to determine the https port for redirect.
+2025-03-08 14:57:57.187 +05:00 [INF] Executing endpoint 'TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI)'
+2025-03-08 14:57:57.242 +05:00 [INF] Route matched with {action = "GetAllTasks", controller = "Tasks"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllTasks(System.Nullable`1[System.Threading.Tasks.TaskStatus]) on controller TaskManagement.WebAPI.Controllers.TasksController (TaskManagement.WebAPI).
+2025-03-08 14:57:57.263 +05:00 [INF] Executing action method TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI) - Validation state: "Valid"
+2025-03-08 14:57:57.892 +05:00 [INF] Executed action method TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 623.0206ms.
+2025-03-08 14:57:57.906 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskManagement.Application.Entities.TaskEntity, TaskManagement.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 14:57:57.922 +05:00 [INF] Executed action TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI) in 675.0085ms
+2025-03-08 14:57:57.925 +05:00 [INF] Executed endpoint 'TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI)'
+2025-03-08 14:57:57.930 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/api/tasks - 200 null application/json; charset=utf-8 759.7469ms
+2025-03-08 14:58:34.771 +05:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5057/api/tasks/017d2adf-9823-454d-bd37-13f1d56f36b7 - application/json 131
+2025-03-08 14:58:34.775 +05:00 [INF] Executing endpoint 'TaskManagement.WebAPI.Controllers.TasksController.UpdateTask (TaskManagement.WebAPI)'
+2025-03-08 14:58:34.795 +05:00 [INF] Route matched with {action = "UpdateTask", controller = "Tasks"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateTask(System.Guid, TaskManagement.Application.Features.Tasks.Commands.UpdateTaskCommand) on controller TaskManagement.WebAPI.Controllers.TasksController (TaskManagement.WebAPI).
+2025-03-08 14:58:34.845 +05:00 [INF] Executing action method TaskManagement.WebAPI.Controllers.TasksController.UpdateTask (TaskManagement.WebAPI) - Validation state: "Valid"
+2025-03-08 14:58:34.947 +05:00 [INF] Executed action method TaskManagement.WebAPI.Controllers.TasksController.UpdateTask (TaskManagement.WebAPI), returned result Microsoft.AspNetCore.Mvc.NoContentResult in 100.1341ms.
+2025-03-08 14:58:34.954 +05:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2025-03-08 14:58:34.955 +05:00 [INF] Executed action TaskManagement.WebAPI.Controllers.TasksController.UpdateTask (TaskManagement.WebAPI) in 157.3656ms
+2025-03-08 14:58:34.957 +05:00 [INF] Executed endpoint 'TaskManagement.WebAPI.Controllers.TasksController.UpdateTask (TaskManagement.WebAPI)'
+2025-03-08 14:58:34.959 +05:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5057/api/tasks/017d2adf-9823-454d-bd37-13f1d56f36b7 - 204 null null 187.2025ms
+2025-03-08 14:58:47.272 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/api/tasks - null null
+2025-03-08 14:58:47.275 +05:00 [INF] Executing endpoint 'TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI)'
+2025-03-08 14:58:47.277 +05:00 [INF] Route matched with {action = "GetAllTasks", controller = "Tasks"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllTasks(System.Nullable`1[System.Threading.Tasks.TaskStatus]) on controller TaskManagement.WebAPI.Controllers.TasksController (TaskManagement.WebAPI).
+2025-03-08 14:58:47.280 +05:00 [INF] Executing action method TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI) - Validation state: "Valid"
+2025-03-08 14:58:47.296 +05:00 [INF] Executed action method TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 13.7406ms.
+2025-03-08 14:58:47.300 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskManagement.Application.Entities.TaskEntity, TaskManagement.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 14:58:47.303 +05:00 [INF] Executed action TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI) in 23.2768ms
+2025-03-08 14:58:47.305 +05:00 [INF] Executed endpoint 'TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI)'
+2025-03-08 14:58:47.306 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/api/tasks - 200 null application/json; charset=utf-8 34.2068ms
+2025-03-08 14:58:51.339 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/api/tasks?status=0 - null null
+2025-03-08 14:58:51.342 +05:00 [INF] Executing endpoint 'TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI)'
+2025-03-08 14:58:51.344 +05:00 [INF] Route matched with {action = "GetAllTasks", controller = "Tasks"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllTasks(System.Nullable`1[System.Threading.Tasks.TaskStatus]) on controller TaskManagement.WebAPI.Controllers.TasksController (TaskManagement.WebAPI).
+2025-03-08 14:58:51.352 +05:00 [INF] Executing action method TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI) - Validation state: "Valid"
+2025-03-08 14:58:51.357 +05:00 [INF] Executed action method TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 3.6615ms.
+2025-03-08 14:58:51.359 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskManagement.Application.Entities.TaskEntity, TaskManagement.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 14:58:51.361 +05:00 [INF] Executed action TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI) in 14.7253ms
+2025-03-08 14:58:51.363 +05:00 [INF] Executed endpoint 'TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI)'
+2025-03-08 14:58:51.364 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/api/tasks?status=0 - 200 null application/json; charset=utf-8 24.5644ms
+2025-03-08 14:59:00.250 +05:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5057/api/tasks/017d2adf-9823-454d-bd37-13f1d56f36b7 - application/json 131
+2025-03-08 14:59:00.252 +05:00 [INF] Executing endpoint 'TaskManagement.WebAPI.Controllers.TasksController.UpdateTask (TaskManagement.WebAPI)'
+2025-03-08 14:59:00.253 +05:00 [INF] Route matched with {action = "UpdateTask", controller = "Tasks"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateTask(System.Guid, TaskManagement.Application.Features.Tasks.Commands.UpdateTaskCommand) on controller TaskManagement.WebAPI.Controllers.TasksController (TaskManagement.WebAPI).
+2025-03-08 14:59:00.256 +05:00 [INF] Executing action method TaskManagement.WebAPI.Controllers.TasksController.UpdateTask (TaskManagement.WebAPI) - Validation state: "Valid"
+2025-03-08 14:59:00.276 +05:00 [INF] Executed action method TaskManagement.WebAPI.Controllers.TasksController.UpdateTask (TaskManagement.WebAPI), returned result Microsoft.AspNetCore.Mvc.NoContentResult in 17.8828ms.
+2025-03-08 14:59:00.278 +05:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2025-03-08 14:59:00.279 +05:00 [INF] Executed action TaskManagement.WebAPI.Controllers.TasksController.UpdateTask (TaskManagement.WebAPI) in 24.3172ms
+2025-03-08 14:59:00.281 +05:00 [INF] Executed endpoint 'TaskManagement.WebAPI.Controllers.TasksController.UpdateTask (TaskManagement.WebAPI)'
+2025-03-08 14:59:00.282 +05:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5057/api/tasks/017d2adf-9823-454d-bd37-13f1d56f36b7 - 204 null null 32.3596ms
+2025-03-08 14:59:08.390 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/api/tasks?status=1 - null null
+2025-03-08 14:59:08.392 +05:00 [INF] Executing endpoint 'TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI)'
+2025-03-08 14:59:08.394 +05:00 [INF] Route matched with {action = "GetAllTasks", controller = "Tasks"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllTasks(System.Nullable`1[System.Threading.Tasks.TaskStatus]) on controller TaskManagement.WebAPI.Controllers.TasksController (TaskManagement.WebAPI).
+2025-03-08 14:59:08.396 +05:00 [INF] Executing action method TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI) - Validation state: "Valid"
+2025-03-08 14:59:08.399 +05:00 [INF] Executed action method TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1.0845ms.
+2025-03-08 14:59:08.401 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskManagement.Application.Entities.TaskEntity, TaskManagement.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 14:59:08.402 +05:00 [INF] Executed action TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI) in 6.6308ms
+2025-03-08 14:59:08.404 +05:00 [INF] Executed endpoint 'TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI)'
+2025-03-08 14:59:08.405 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/api/tasks?status=1 - 200 null application/json; charset=utf-8 15.6285ms
+2025-03-08 14:59:18.807 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/api/tasks?status=1 - null null
+2025-03-08 14:59:18.810 +05:00 [INF] Executing endpoint 'TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI)'
+2025-03-08 14:59:18.812 +05:00 [INF] Route matched with {action = "GetAllTasks", controller = "Tasks"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllTasks(System.Nullable`1[System.Threading.Tasks.TaskStatus]) on controller TaskManagement.WebAPI.Controllers.TasksController (TaskManagement.WebAPI).
+2025-03-08 14:59:18.814 +05:00 [INF] Executing action method TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI) - Validation state: "Valid"
+2025-03-08 14:59:18.817 +05:00 [INF] Executed action method TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1.5804ms.
+2025-03-08 14:59:18.820 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskManagement.Application.Entities.TaskEntity, TaskManagement.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 14:59:18.821 +05:00 [INF] Executed action TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI) in 7.9285ms
+2025-03-08 14:59:18.823 +05:00 [INF] Executed endpoint 'TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI)'
+2025-03-08 14:59:18.825 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/api/tasks?status=1 - 200 null application/json; charset=utf-8 17.2083ms
+2025-03-08 14:59:41.973 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/api/tasks/017d2adf-9823-454d-bd37-13f1d56f36b7 - null null
+2025-03-08 14:59:41.976 +05:00 [INF] Executing endpoint 'TaskManagement.WebAPI.Controllers.TasksController.GetTaskById (TaskManagement.WebAPI)'
+2025-03-08 14:59:41.981 +05:00 [INF] Route matched with {action = "GetTaskById", controller = "Tasks"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetTaskById(System.Guid) on controller TaskManagement.WebAPI.Controllers.TasksController (TaskManagement.WebAPI).
+2025-03-08 14:59:41.983 +05:00 [INF] Executing action method TaskManagement.WebAPI.Controllers.TasksController.GetTaskById (TaskManagement.WebAPI) - Validation state: "Valid"
+2025-03-08 14:59:41.988 +05:00 [INF] Executed action method TaskManagement.WebAPI.Controllers.TasksController.GetTaskById (TaskManagement.WebAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 3.8204ms.
+2025-03-08 14:59:41.991 +05:00 [INF] Executing OkObjectResult, writing value of type 'TaskManagement.Application.Entities.TaskEntity'.
+2025-03-08 14:59:41.992 +05:00 [INF] Executed action TaskManagement.WebAPI.Controllers.TasksController.GetTaskById (TaskManagement.WebAPI) in 9.4613ms
+2025-03-08 14:59:41.994 +05:00 [INF] Executed endpoint 'TaskManagement.WebAPI.Controllers.TasksController.GetTaskById (TaskManagement.WebAPI)'
+2025-03-08 14:59:41.995 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/api/tasks/017d2adf-9823-454d-bd37-13f1d56f36b7 - 200 null application/json; charset=utf-8 22.3025ms
+2025-03-08 14:59:51.386 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/api/tasks?status=1 - null null
+2025-03-08 14:59:51.391 +05:00 [INF] Executing endpoint 'TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI)'
+2025-03-08 14:59:51.393 +05:00 [INF] Route matched with {action = "GetAllTasks", controller = "Tasks"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllTasks(System.Nullable`1[System.Threading.Tasks.TaskStatus]) on controller TaskManagement.WebAPI.Controllers.TasksController (TaskManagement.WebAPI).
+2025-03-08 14:59:51.396 +05:00 [INF] Executing action method TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI) - Validation state: "Valid"
+2025-03-08 14:59:51.399 +05:00 [INF] Executed action method TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1.2915ms.
+2025-03-08 14:59:51.401 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskManagement.Application.Entities.TaskEntity, TaskManagement.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 14:59:51.403 +05:00 [INF] Executed action TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI) in 7.3783ms
+2025-03-08 14:59:51.404 +05:00 [INF] Executed endpoint 'TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI)'
+2025-03-08 14:59:51.405 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/api/tasks?status=1 - 200 null application/json; charset=utf-8 18.9864ms
+2025-03-08 14:59:55.785 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/api/tasks?status=0 - null null
+2025-03-08 14:59:55.788 +05:00 [INF] Executing endpoint 'TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI)'
+2025-03-08 14:59:55.789 +05:00 [INF] Route matched with {action = "GetAllTasks", controller = "Tasks"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllTasks(System.Nullable`1[System.Threading.Tasks.TaskStatus]) on controller TaskManagement.WebAPI.Controllers.TasksController (TaskManagement.WebAPI).
+2025-03-08 14:59:55.792 +05:00 [INF] Executing action method TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI) - Validation state: "Valid"
+2025-03-08 14:59:55.794 +05:00 [INF] Executed action method TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1.0254ms.
+2025-03-08 14:59:55.796 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskManagement.Application.Entities.TaskEntity, TaskManagement.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 14:59:55.809 +05:00 [INF] Executed action TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI) in 18.0656ms
+2025-03-08 14:59:55.811 +05:00 [INF] Executed endpoint 'TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI)'
+2025-03-08 14:59:55.812 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/api/tasks?status=0 - 200 null application/json; charset=utf-8 27.108ms
+2025-03-08 15:00:09.898 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/api/tasks?status=2 - null null
+2025-03-08 15:00:09.900 +05:00 [INF] Executing endpoint 'TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI)'
+2025-03-08 15:00:09.902 +05:00 [INF] Route matched with {action = "GetAllTasks", controller = "Tasks"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllTasks(System.Nullable`1[System.Threading.Tasks.TaskStatus]) on controller TaskManagement.WebAPI.Controllers.TasksController (TaskManagement.WebAPI).
+2025-03-08 15:00:09.903 +05:00 [INF] Executing action method TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI) - Validation state: "Valid"
+2025-03-08 15:00:09.906 +05:00 [INF] Executed action method TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1.3807ms.
+2025-03-08 15:00:09.908 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskManagement.Application.Entities.TaskEntity, TaskManagement.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 15:00:09.910 +05:00 [INF] Executed action TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI) in 6.6734ms
+2025-03-08 15:00:09.912 +05:00 [INF] Executed endpoint 'TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI)'
+2025-03-08 15:00:09.913 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/api/tasks?status=2 - 200 null application/json; charset=utf-8 15.4809ms
+2025-03-08 15:01:42.644 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/api/tasks?status=2 - null null
+2025-03-08 15:01:42.647 +05:00 [INF] Executing endpoint 'TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI)'
+2025-03-08 15:01:42.649 +05:00 [INF] Route matched with {action = "GetAllTasks", controller = "Tasks"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllTasks(System.Nullable`1[System.Threading.Tasks.TaskStatus]) on controller TaskManagement.WebAPI.Controllers.TasksController (TaskManagement.WebAPI).
+2025-03-08 15:01:42.651 +05:00 [INF] Executing action method TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI) - Validation state: "Valid"
+2025-03-08 15:01:42.653 +05:00 [INF] Executed action method TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1.2131ms.
+2025-03-08 15:01:42.655 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskManagement.Application.Entities.TaskEntity, TaskManagement.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 15:01:42.656 +05:00 [INF] Executed action TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI) in 6.1109ms
+2025-03-08 15:01:42.658 +05:00 [INF] Executed endpoint 'TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI)'
+2025-03-08 15:01:42.659 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/api/tasks?status=2 - 200 null application/json; charset=utf-8 15.2664ms
+2025-03-08 15:13:24.415 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/api/tasks?status=2 - null null
+2025-03-08 15:13:24.418 +05:00 [INF] Executing endpoint 'TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI)'
+2025-03-08 15:13:24.419 +05:00 [INF] Route matched with {action = "GetAllTasks", controller = "Tasks"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllTasks(System.Nullable`1[System.Threading.Tasks.TaskStatus]) on controller TaskManagement.WebAPI.Controllers.TasksController (TaskManagement.WebAPI).
+2025-03-08 15:13:24.422 +05:00 [INF] Executing action method TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI) - Validation state: "Valid"
+2025-03-08 15:13:24.472 +05:00 [INF] Executed action method TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 48.5346ms.
+2025-03-08 15:13:24.473 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskManagement.Application.Entities.TaskEntity, TaskManagement.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 15:13:24.474 +05:00 [INF] Executed action TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI) in 52.2319ms
+2025-03-08 15:13:24.475 +05:00 [INF] Executed endpoint 'TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI)'
+2025-03-08 15:13:24.476 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/api/tasks?status=2 - 200 null application/json; charset=utf-8 61.283ms
+2025-03-08 15:13:31.465 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/api/tasks?status=0 - null null
+2025-03-08 15:13:31.468 +05:00 [INF] Executing endpoint 'TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI)'
+2025-03-08 15:13:31.469 +05:00 [INF] Route matched with {action = "GetAllTasks", controller = "Tasks"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllTasks(System.Nullable`1[System.Threading.Tasks.TaskStatus]) on controller TaskManagement.WebAPI.Controllers.TasksController (TaskManagement.WebAPI).
+2025-03-08 15:13:31.471 +05:00 [INF] Executing action method TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI) - Validation state: "Valid"
+2025-03-08 15:13:31.473 +05:00 [INF] Executed action method TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.9346ms.
+2025-03-08 15:13:31.474 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskManagement.Application.Entities.TaskEntity, TaskManagement.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 15:13:31.476 +05:00 [INF] Executed action TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI) in 5.0834ms
+2025-03-08 15:13:31.478 +05:00 [INF] Executed endpoint 'TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI)'
+2025-03-08 15:13:31.479 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/api/tasks?status=0 - 200 null application/json; charset=utf-8 13.2532ms
+2025-03-08 15:16:31.014 +05:00 [INF] Application is shutting down...
+2025-03-08 15:16:39.000 +05:00 [INF] Now listening on: http://localhost:5057
+2025-03-08 15:16:39.044 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-08 15:16:39.046 +05:00 [INF] Hosting environment: Development
+2025-03-08 15:16:39.047 +05:00 [INF] Content root path: C:\С#\Test_TaskManagement\TaskManagement.WebAPI
+2025-03-08 15:16:39.720 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/swagger/index.html - null null
+2025-03-08 15:16:39.932 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/swagger/index.html - 200 null text/html;charset=utf-8 214.0433ms
+2025-03-08 15:16:40.043 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/swagger/v1/swagger.json - null null
+2025-03-08 15:16:40.235 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 192.125ms
+2025-03-08 15:16:47.024 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/api/tasks?status=0 - null null
+2025-03-08 15:16:47.036 +05:00 [WRN] Failed to determine the https port for redirect.
+2025-03-08 15:16:47.042 +05:00 [INF] Executing endpoint 'TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI)'
+2025-03-08 15:16:47.071 +05:00 [INF] Route matched with {action = "GetAllTasks", controller = "Tasks"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllTasks(System.Nullable`1[System.Threading.Tasks.TaskStatus]) on controller TaskManagement.WebAPI.Controllers.TasksController (TaskManagement.WebAPI).
+2025-03-08 15:16:47.096 +05:00 [INF] Executing action method TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI) - Validation state: "Valid"
+2025-03-08 15:16:47.368 +05:00 [INF] Executed action method TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 265.8955ms.
+2025-03-08 15:16:47.383 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskManagement.Application.Entities.TaskEntity, TaskManagement.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 15:16:47.409 +05:00 [INF] Executed action TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI) in 330.0387ms
+2025-03-08 15:16:47.412 +05:00 [INF] Executed endpoint 'TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI)'
+2025-03-08 15:16:47.418 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/api/tasks?status=0 - 200 null application/json; charset=utf-8 394.019ms
+2025-03-08 15:16:50.538 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/api/tasks?status=0 - null null
+2025-03-08 15:16:50.543 +05:00 [INF] Executing endpoint 'TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI)'
+2025-03-08 15:16:50.545 +05:00 [INF] Route matched with {action = "GetAllTasks", controller = "Tasks"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllTasks(System.Nullable`1[System.Threading.Tasks.TaskStatus]) on controller TaskManagement.WebAPI.Controllers.TasksController (TaskManagement.WebAPI).
+2025-03-08 15:16:50.550 +05:00 [INF] Executing action method TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI) - Validation state: "Valid"
+2025-03-08 15:16:50.555 +05:00 [INF] Executed action method TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 3.9016ms.
+2025-03-08 15:16:50.557 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskManagement.Application.Entities.TaskEntity, TaskManagement.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 15:16:50.558 +05:00 [INF] Executed action TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI) in 11.1299ms
+2025-03-08 15:16:50.560 +05:00 [INF] Executed endpoint 'TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI)'
+2025-03-08 15:16:50.561 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/api/tasks?status=0 - 200 null application/json; charset=utf-8 22.3571ms
+2025-03-08 15:16:54.637 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/api/tasks?status=3 - null null
+2025-03-08 15:16:54.642 +05:00 [INF] Executing endpoint 'TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI)'
+2025-03-08 15:16:54.643 +05:00 [INF] Route matched with {action = "GetAllTasks", controller = "Tasks"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllTasks(System.Nullable`1[System.Threading.Tasks.TaskStatus]) on controller TaskManagement.WebAPI.Controllers.TasksController (TaskManagement.WebAPI).
+2025-03-08 15:16:54.646 +05:00 [INF] Executing action method TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI) - Validation state: "Valid"
+2025-03-08 15:16:54.649 +05:00 [INF] Executed action method TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 2.1414ms.
+2025-03-08 15:16:54.650 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskManagement.Application.Entities.TaskEntity, TaskManagement.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 15:16:54.651 +05:00 [INF] Executed action TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI) in 6.151ms
+2025-03-08 15:16:54.653 +05:00 [INF] Executed endpoint 'TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI)'
+2025-03-08 15:16:54.653 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/api/tasks?status=3 - 200 null application/json; charset=utf-8 16.1707ms
+2025-03-08 15:17:03.841 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/api/tasks?status=3 - null null
+2025-03-08 15:17:03.845 +05:00 [INF] Executing endpoint 'TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI)'
+2025-03-08 15:17:03.846 +05:00 [INF] Route matched with {action = "GetAllTasks", controller = "Tasks"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllTasks(System.Nullable`1[System.Threading.Tasks.TaskStatus]) on controller TaskManagement.WebAPI.Controllers.TasksController (TaskManagement.WebAPI).
+2025-03-08 15:17:03.848 +05:00 [INF] Executing action method TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI) - Validation state: "Valid"
+2025-03-08 15:17:03.850 +05:00 [INF] Executed action method TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1.47ms.
+2025-03-08 15:17:03.852 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskManagement.Application.Entities.TaskEntity, TaskManagement.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 15:17:03.853 +05:00 [INF] Executed action TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI) in 5.8164ms
+2025-03-08 15:17:03.854 +05:00 [INF] Executed endpoint 'TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI)'
+2025-03-08 15:17:03.855 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/api/tasks?status=3 - 200 null application/json; charset=utf-8 14.4566ms
+2025-03-08 15:17:06.746 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/api/tasks?status=0 - null null
+2025-03-08 15:17:06.749 +05:00 [INF] Executing endpoint 'TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI)'
+2025-03-08 15:17:06.750 +05:00 [INF] Route matched with {action = "GetAllTasks", controller = "Tasks"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllTasks(System.Nullable`1[System.Threading.Tasks.TaskStatus]) on controller TaskManagement.WebAPI.Controllers.TasksController (TaskManagement.WebAPI).
+2025-03-08 15:17:06.752 +05:00 [INF] Executing action method TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI) - Validation state: "Valid"
+2025-03-08 15:17:06.753 +05:00 [INF] Executed action method TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.8717ms.
+2025-03-08 15:17:06.756 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskManagement.Application.Entities.TaskEntity, TaskManagement.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 15:17:06.758 +05:00 [INF] Executed action TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI) in 7.0965ms
+2025-03-08 15:17:06.761 +05:00 [INF] Executed endpoint 'TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI)'
+2025-03-08 15:17:06.762 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/api/tasks?status=0 - 200 null application/json; charset=utf-8 15.5369ms
+2025-03-08 15:17:30.670 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/api/tasks?status=0 - null null
+2025-03-08 15:17:30.673 +05:00 [INF] Executing endpoint 'TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI)'
+2025-03-08 15:17:30.675 +05:00 [INF] Route matched with {action = "GetAllTasks", controller = "Tasks"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllTasks(System.Nullable`1[System.Threading.Tasks.TaskStatus]) on controller TaskManagement.WebAPI.Controllers.TasksController (TaskManagement.WebAPI).
+2025-03-08 15:17:30.677 +05:00 [INF] Executing action method TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI) - Validation state: "Valid"
+2025-03-08 15:17:30.680 +05:00 [INF] Executed action method TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1.1073ms.
+2025-03-08 15:17:30.683 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskManagement.Application.Entities.TaskEntity, TaskManagement.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 15:17:30.685 +05:00 [INF] Executed action TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI) in 7.7823ms
+2025-03-08 15:17:30.686 +05:00 [INF] Executed endpoint 'TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI)'
+2025-03-08 15:17:30.687 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/api/tasks?status=0 - 200 null application/json; charset=utf-8 16.768ms
+2025-03-08 15:18:14.162 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/api/tasks?status=0 - null null
+2025-03-08 15:18:14.164 +05:00 [INF] Executing endpoint 'TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI)'
+2025-03-08 15:18:14.165 +05:00 [INF] Route matched with {action = "GetAllTasks", controller = "Tasks"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllTasks(System.Nullable`1[System.Threading.Tasks.TaskStatus]) on controller TaskManagement.WebAPI.Controllers.TasksController (TaskManagement.WebAPI).
+2025-03-08 15:18:14.167 +05:00 [INF] Executing action method TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI) - Validation state: "Valid"
+2025-03-08 15:18:14.546 +05:00 [INF] Executed action method TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 378.0639ms.
+2025-03-08 15:18:14.548 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskManagement.Application.Entities.TaskEntity, TaskManagement.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 15:18:14.551 +05:00 [INF] Executed action TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI) in 384.8689ms
+2025-03-08 15:18:14.553 +05:00 [INF] Executed endpoint 'TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI)'
+2025-03-08 15:18:14.554 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/api/tasks?status=0 - 200 null application/json; charset=utf-8 392.3073ms
+2025-03-08 15:21:57.645 +05:00 [INF] Application is shutting down...
+2025-03-08 15:22:02.698 +05:00 [INF] Now listening on: http://localhost:5057
+2025-03-08 15:22:02.760 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-08 15:22:02.762 +05:00 [INF] Hosting environment: Development
+2025-03-08 15:22:02.763 +05:00 [INF] Content root path: C:\С#\Test_TaskManagement\TaskManagement.WebAPI
+2025-03-08 15:22:02.926 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/swagger/index.html - null null
+2025-03-08 15:22:03.146 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/swagger/index.html - 200 null text/html;charset=utf-8 221.6244ms
+2025-03-08 15:22:03.261 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/swagger/v1/swagger.json - null null
+2025-03-08 15:22:03.454 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 194.8488ms
+2025-03-08 15:22:11.438 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/api/tasks?status=0 - null null
+2025-03-08 15:22:11.447 +05:00 [WRN] Failed to determine the https port for redirect.
+2025-03-08 15:22:11.453 +05:00 [INF] Executing endpoint 'TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI)'
+2025-03-08 15:22:11.484 +05:00 [INF] Route matched with {action = "GetAllTasks", controller = "Tasks"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllTasks(System.Nullable`1[System.Threading.Tasks.TaskStatus]) on controller TaskManagement.WebAPI.Controllers.TasksController (TaskManagement.WebAPI).
+2025-03-08 15:22:11.509 +05:00 [INF] Executing action method TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI) - Validation state: "Valid"
+2025-03-08 15:22:11.559 +05:00 [INF] Executed action TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI) in 69.1694ms
+2025-03-08 15:22:11.562 +05:00 [INF] Executed endpoint 'TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI)'
+2025-03-08 15:22:11.594 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/api/tasks?status=0 - 400 null application/json 156.2686ms
+2025-03-08 15:22:15.619 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/api/tasks?status=1 - null null
+2025-03-08 15:22:15.623 +05:00 [INF] Executing endpoint 'TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI)'
+2025-03-08 15:22:15.625 +05:00 [INF] Route matched with {action = "GetAllTasks", controller = "Tasks"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllTasks(System.Nullable`1[System.Threading.Tasks.TaskStatus]) on controller TaskManagement.WebAPI.Controllers.TasksController (TaskManagement.WebAPI).
+2025-03-08 15:22:15.629 +05:00 [INF] Executing action method TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI) - Validation state: "Valid"
+2025-03-08 15:22:15.633 +05:00 [INF] Executed action TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI) in 6.4653ms
+2025-03-08 15:22:15.635 +05:00 [INF] Executed endpoint 'TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI)'
+2025-03-08 15:22:15.637 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/api/tasks?status=1 - 400 null application/json 18.664ms
+2025-03-08 15:22:18.931 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/api/tasks?status=2 - null null
+2025-03-08 15:22:18.935 +05:00 [INF] Executing endpoint 'TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI)'
+2025-03-08 15:22:18.937 +05:00 [INF] Route matched with {action = "GetAllTasks", controller = "Tasks"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllTasks(System.Nullable`1[System.Threading.Tasks.TaskStatus]) on controller TaskManagement.WebAPI.Controllers.TasksController (TaskManagement.WebAPI).
+2025-03-08 15:22:18.940 +05:00 [INF] Executing action method TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI) - Validation state: "Valid"
+2025-03-08 15:22:18.943 +05:00 [INF] Executed action TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI) in 4.0643ms
+2025-03-08 15:22:18.944 +05:00 [INF] Executed endpoint 'TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI)'
+2025-03-08 15:22:18.946 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/api/tasks?status=2 - 400 null application/json 14.4137ms
+2025-03-08 15:22:21.395 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/api/tasks?status=3 - null null
+2025-03-08 15:22:21.398 +05:00 [INF] Executing endpoint 'TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI)'
+2025-03-08 15:22:21.400 +05:00 [INF] Route matched with {action = "GetAllTasks", controller = "Tasks"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllTasks(System.Nullable`1[System.Threading.Tasks.TaskStatus]) on controller TaskManagement.WebAPI.Controllers.TasksController (TaskManagement.WebAPI).
+2025-03-08 15:22:21.403 +05:00 [INF] Executing action method TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI) - Validation state: "Valid"
+2025-03-08 15:22:21.405 +05:00 [INF] Executed action TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI) in 2.7932ms
+2025-03-08 15:22:21.407 +05:00 [INF] Executed endpoint 'TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI)'
+2025-03-08 15:22:21.408 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/api/tasks?status=3 - 400 null application/json 12.8871ms
+2025-03-08 15:22:24.465 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/api/tasks?status=4 - null null
+2025-03-08 15:22:24.468 +05:00 [INF] Executing endpoint 'TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI)'
+2025-03-08 15:22:24.469 +05:00 [INF] Route matched with {action = "GetAllTasks", controller = "Tasks"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllTasks(System.Nullable`1[System.Threading.Tasks.TaskStatus]) on controller TaskManagement.WebAPI.Controllers.TasksController (TaskManagement.WebAPI).
+2025-03-08 15:22:24.472 +05:00 [INF] Executing action method TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI) - Validation state: "Valid"
+2025-03-08 15:22:24.474 +05:00 [INF] Executed action TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI) in 2.4784ms
+2025-03-08 15:22:24.475 +05:00 [INF] Executed endpoint 'TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI)'
+2025-03-08 15:22:24.477 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/api/tasks?status=4 - 400 null application/json 12.0379ms
+2025-03-08 15:22:27.217 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/api/tasks?status=5 - null null
+2025-03-08 15:22:27.220 +05:00 [INF] Executing endpoint 'TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI)'
+2025-03-08 15:22:27.221 +05:00 [INF] Route matched with {action = "GetAllTasks", controller = "Tasks"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllTasks(System.Nullable`1[System.Threading.Tasks.TaskStatus]) on controller TaskManagement.WebAPI.Controllers.TasksController (TaskManagement.WebAPI).
+2025-03-08 15:22:27.223 +05:00 [INF] Executing action method TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI) - Validation state: "Valid"
+2025-03-08 15:22:27.225 +05:00 [INF] Executed action TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI) in 2.1096ms
+2025-03-08 15:22:27.227 +05:00 [INF] Executed endpoint 'TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI)'
+2025-03-08 15:22:27.229 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/api/tasks?status=5 - 400 null application/json 11.9648ms
+2025-03-08 15:22:30.282 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/api/tasks?status=6 - null null
+2025-03-08 15:22:30.284 +05:00 [INF] Executing endpoint 'TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI)'
+2025-03-08 15:22:30.287 +05:00 [INF] Route matched with {action = "GetAllTasks", controller = "Tasks"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllTasks(System.Nullable`1[System.Threading.Tasks.TaskStatus]) on controller TaskManagement.WebAPI.Controllers.TasksController (TaskManagement.WebAPI).
+2025-03-08 15:22:30.290 +05:00 [INF] Executing action method TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI) - Validation state: "Valid"
+2025-03-08 15:22:30.292 +05:00 [INF] Executed action TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI) in 2.2928ms
+2025-03-08 15:22:30.293 +05:00 [INF] Executed endpoint 'TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI)'
+2025-03-08 15:22:30.294 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/api/tasks?status=6 - 400 null application/json 12.2356ms
+2025-03-08 15:22:32.964 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/api/tasks?status=7 - null null
+2025-03-08 15:22:32.966 +05:00 [INF] Executing endpoint 'TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI)'
+2025-03-08 15:22:32.968 +05:00 [INF] Route matched with {action = "GetAllTasks", controller = "Tasks"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllTasks(System.Nullable`1[System.Threading.Tasks.TaskStatus]) on controller TaskManagement.WebAPI.Controllers.TasksController (TaskManagement.WebAPI).
+2025-03-08 15:22:32.971 +05:00 [INF] Executing action method TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI) - Validation state: "Valid"
+2025-03-08 15:22:32.973 +05:00 [INF] Executed action TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI) in 2.4429ms
+2025-03-08 15:22:32.974 +05:00 [INF] Executed endpoint 'TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI)'
+2025-03-08 15:22:32.976 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/api/tasks?status=7 - 400 null application/json 11.9615ms
+2025-03-08 15:22:35.547 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/api/tasks?status=1 - null null
+2025-03-08 15:22:35.550 +05:00 [INF] Executing endpoint 'TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI)'
+2025-03-08 15:22:35.552 +05:00 [INF] Route matched with {action = "GetAllTasks", controller = "Tasks"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllTasks(System.Nullable`1[System.Threading.Tasks.TaskStatus]) on controller TaskManagement.WebAPI.Controllers.TasksController (TaskManagement.WebAPI).
+2025-03-08 15:22:35.555 +05:00 [INF] Executing action method TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI) - Validation state: "Valid"
+2025-03-08 15:22:35.557 +05:00 [INF] Executed action TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI) in 2.2244ms
+2025-03-08 15:22:35.558 +05:00 [INF] Executed endpoint 'TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI)'
+2025-03-08 15:22:35.561 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/api/tasks?status=1 - 400 null application/json 13.0714ms
+2025-03-08 15:22:41.587 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/api/tasks/017d2adf-9823-454d-bd37-13f1d56f36b7 - null null
+2025-03-08 15:22:41.591 +05:00 [INF] Executing endpoint 'TaskManagement.WebAPI.Controllers.TasksController.GetTaskById (TaskManagement.WebAPI)'
+2025-03-08 15:22:41.612 +05:00 [INF] Route matched with {action = "GetTaskById", controller = "Tasks"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetTaskById(System.Guid) on controller TaskManagement.WebAPI.Controllers.TasksController (TaskManagement.WebAPI).
+2025-03-08 15:22:41.615 +05:00 [INF] Executing action method TaskManagement.WebAPI.Controllers.TasksController.GetTaskById (TaskManagement.WebAPI) - Validation state: "Valid"
+2025-03-08 15:22:42.213 +05:00 [INF] Executed action method TaskManagement.WebAPI.Controllers.TasksController.GetTaskById (TaskManagement.WebAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 593.2746ms.
+2025-03-08 15:22:42.225 +05:00 [INF] Executing OkObjectResult, writing value of type 'TaskManagement.Application.Entities.TaskEntity'.
+2025-03-08 15:22:42.237 +05:00 [INF] Executed action TaskManagement.WebAPI.Controllers.TasksController.GetTaskById (TaskManagement.WebAPI) in 622.7532ms
+2025-03-08 15:22:42.240 +05:00 [INF] Executed endpoint 'TaskManagement.WebAPI.Controllers.TasksController.GetTaskById (TaskManagement.WebAPI)'
+2025-03-08 15:22:42.245 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/api/tasks/017d2adf-9823-454d-bd37-13f1d56f36b7 - 200 null application/json; charset=utf-8 657.8588ms
+2025-03-08 15:24:48.102 +05:00 [INF] Application is shutting down...
+2025-03-08 15:24:52.328 +05:00 [INF] Now listening on: http://localhost:5057
+2025-03-08 15:24:52.386 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-08 15:24:52.388 +05:00 [INF] Hosting environment: Development
+2025-03-08 15:24:52.389 +05:00 [INF] Content root path: C:\С#\Test_TaskManagement\TaskManagement.WebAPI
+2025-03-08 15:24:52.678 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/swagger/index.html - null null
+2025-03-08 15:24:52.860 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/swagger/index.html - 200 null text/html;charset=utf-8 185.2681ms
+2025-03-08 15:24:52.971 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/swagger/v1/swagger.json - null null
+2025-03-08 15:24:53.168 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 198.59ms
+2025-03-08 15:25:22.340 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/api/tasks?status=0 - null null
+2025-03-08 15:25:22.353 +05:00 [WRN] Failed to determine the https port for redirect.
+2025-03-08 15:25:22.359 +05:00 [INF] Executing endpoint 'TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI)'
+2025-03-08 15:25:22.397 +05:00 [INF] Route matched with {action = "GetAllTasks", controller = "Tasks"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllTasks(System.Nullable`1[System.Threading.Tasks.TaskStatus]) on controller TaskManagement.WebAPI.Controllers.TasksController (TaskManagement.WebAPI).
+2025-03-08 15:25:22.426 +05:00 [INF] Executing action method TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI) - Validation state: "Valid"
+2025-03-08 15:25:23.253 +05:00 [INF] Executed action method TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 819.7358ms.
+2025-03-08 15:25:23.270 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskManagement.Application.Entities.TaskEntity, TaskManagement.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 15:25:23.289 +05:00 [INF] Executed action TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI) in 884.0729ms
+2025-03-08 15:25:23.292 +05:00 [INF] Executed endpoint 'TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI)'
+2025-03-08 15:25:23.298 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/api/tasks?status=0 - 200 null application/json; charset=utf-8 957.8338ms
+2025-03-08 15:25:26.228 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/api/tasks?status=1 - null null
+2025-03-08 15:25:26.231 +05:00 [INF] Executing endpoint 'TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI)'
+2025-03-08 15:25:26.232 +05:00 [INF] Route matched with {action = "GetAllTasks", controller = "Tasks"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllTasks(System.Nullable`1[System.Threading.Tasks.TaskStatus]) on controller TaskManagement.WebAPI.Controllers.TasksController (TaskManagement.WebAPI).
+2025-03-08 15:25:26.236 +05:00 [INF] Executing action method TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI) - Validation state: "Valid"
+2025-03-08 15:25:26.267 +05:00 [INF] Executed action method TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 28.4929ms.
+2025-03-08 15:25:26.270 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskManagement.Application.Entities.TaskEntity, TaskManagement.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 15:25:26.272 +05:00 [INF] Executed action TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI) in 37.1908ms
+2025-03-08 15:25:26.273 +05:00 [INF] Executed endpoint 'TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI)'
+2025-03-08 15:25:26.274 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/api/tasks?status=1 - 200 null application/json; charset=utf-8 46ms
+2025-03-08 15:25:30.001 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/api/tasks?status=2 - null null
+2025-03-08 15:25:30.004 +05:00 [INF] Executing endpoint 'TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI)'
+2025-03-08 15:25:30.006 +05:00 [INF] Route matched with {action = "GetAllTasks", controller = "Tasks"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllTasks(System.Nullable`1[System.Threading.Tasks.TaskStatus]) on controller TaskManagement.WebAPI.Controllers.TasksController (TaskManagement.WebAPI).
+2025-03-08 15:25:30.008 +05:00 [INF] Executing action method TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI) - Validation state: "Valid"
+2025-03-08 15:25:30.014 +05:00 [INF] Executed action method TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 4.9313ms.
+2025-03-08 15:25:30.016 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskManagement.Application.Entities.TaskEntity, TaskManagement.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 15:25:30.018 +05:00 [INF] Executed action TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI) in 10.4501ms
+2025-03-08 15:25:30.019 +05:00 [INF] Executed endpoint 'TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI)'
+2025-03-08 15:25:30.021 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/api/tasks?status=2 - 200 null application/json; charset=utf-8 19.3303ms
+2025-03-08 15:25:40.356 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/api/tasks?status=1 - null null
+2025-03-08 15:25:40.359 +05:00 [INF] Executing endpoint 'TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI)'
+2025-03-08 15:25:40.360 +05:00 [INF] Route matched with {action = "GetAllTasks", controller = "Tasks"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllTasks(System.Nullable`1[System.Threading.Tasks.TaskStatus]) on controller TaskManagement.WebAPI.Controllers.TasksController (TaskManagement.WebAPI).
+2025-03-08 15:25:40.362 +05:00 [INF] Executing action method TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI) - Validation state: "Valid"
+2025-03-08 15:25:40.387 +05:00 [INF] Executed action method TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 23.0021ms.
+2025-03-08 15:25:40.388 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskManagement.Application.Entities.TaskEntity, TaskManagement.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 15:25:40.390 +05:00 [INF] Executed action TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI) in 27.6505ms
+2025-03-08 15:25:40.391 +05:00 [INF] Executed endpoint 'TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI)'
+2025-03-08 15:25:40.392 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/api/tasks?status=1 - 200 null application/json; charset=utf-8 35.8104ms
+2025-03-08 15:26:19.308 +05:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5057/api/tasks/017d2adf-9823-454d-bd37-13f1d56f36b7 - application/json 121
+2025-03-08 15:26:19.312 +05:00 [INF] Executing endpoint 'TaskManagement.WebAPI.Controllers.TasksController.UpdateTask (TaskManagement.WebAPI)'
+2025-03-08 15:26:19.319 +05:00 [INF] Route matched with {action = "UpdateTask", controller = "Tasks"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateTask(System.Guid, TaskManagement.Application.Features.Tasks.Commands.UpdateTaskCommand) on controller TaskManagement.WebAPI.Controllers.TasksController (TaskManagement.WebAPI).
+2025-03-08 15:26:19.344 +05:00 [INF] Executing action method TaskManagement.WebAPI.Controllers.TasksController.UpdateTask (TaskManagement.WebAPI) - Validation state: "Valid"
+2025-03-08 15:26:19.347 +05:00 [INF] Executed action method TaskManagement.WebAPI.Controllers.TasksController.UpdateTask (TaskManagement.WebAPI), returned result Microsoft.AspNetCore.Mvc.BadRequestObjectResult in 1.4109ms.
+2025-03-08 15:26:19.349 +05:00 [INF] Executing BadRequestObjectResult, writing value of type 'System.String'.
+2025-03-08 15:26:19.351 +05:00 [INF] Executed action TaskManagement.WebAPI.Controllers.TasksController.UpdateTask (TaskManagement.WebAPI) in 28.969ms
+2025-03-08 15:26:19.353 +05:00 [INF] Executed endpoint 'TaskManagement.WebAPI.Controllers.TasksController.UpdateTask (TaskManagement.WebAPI)'
+2025-03-08 15:26:19.354 +05:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5057/api/tasks/017d2adf-9823-454d-bd37-13f1d56f36b7 - 400 null text/plain; charset=utf-8 45.5045ms
+2025-03-08 15:26:54.034 +05:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5057/api/tasks/017d2adf-9823-454d-bd37-13f1d56f36b7 - application/json 121
+2025-03-08 15:26:54.039 +05:00 [INF] Executing endpoint 'TaskManagement.WebAPI.Controllers.TasksController.UpdateTask (TaskManagement.WebAPI)'
+2025-03-08 15:26:54.042 +05:00 [INF] Route matched with {action = "UpdateTask", controller = "Tasks"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateTask(System.Guid, TaskManagement.Application.Features.Tasks.Commands.UpdateTaskCommand) on controller TaskManagement.WebAPI.Controllers.TasksController (TaskManagement.WebAPI).
+2025-03-08 15:26:54.047 +05:00 [INF] Executing action method TaskManagement.WebAPI.Controllers.TasksController.UpdateTask (TaskManagement.WebAPI) - Validation state: "Valid"
+2025-03-08 15:26:54.119 +05:00 [INF] Executed action method TaskManagement.WebAPI.Controllers.TasksController.UpdateTask (TaskManagement.WebAPI), returned result Microsoft.AspNetCore.Mvc.NoContentResult in 70.6493ms.
+2025-03-08 15:26:54.124 +05:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2025-03-08 15:26:54.125 +05:00 [INF] Executed action TaskManagement.WebAPI.Controllers.TasksController.UpdateTask (TaskManagement.WebAPI) in 79.6153ms
+2025-03-08 15:26:54.126 +05:00 [INF] Executed endpoint 'TaskManagement.WebAPI.Controllers.TasksController.UpdateTask (TaskManagement.WebAPI)'
+2025-03-08 15:26:54.127 +05:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5057/api/tasks/017d2adf-9823-454d-bd37-13f1d56f36b7 - 204 null null 92.3531ms
+2025-03-08 15:26:58.627 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/api/tasks?status=1 - null null
+2025-03-08 15:26:58.630 +05:00 [INF] Executing endpoint 'TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI)'
+2025-03-08 15:26:58.632 +05:00 [INF] Route matched with {action = "GetAllTasks", controller = "Tasks"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllTasks(System.Nullable`1[System.Threading.Tasks.TaskStatus]) on controller TaskManagement.WebAPI.Controllers.TasksController (TaskManagement.WebAPI).
+2025-03-08 15:26:58.635 +05:00 [INF] Executing action method TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI) - Validation state: "Valid"
+2025-03-08 15:26:58.637 +05:00 [INF] Executed action method TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.9821ms.
+2025-03-08 15:26:58.638 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskManagement.Application.Entities.TaskEntity, TaskManagement.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 15:26:58.640 +05:00 [INF] Executed action TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI) in 5.664ms
+2025-03-08 15:26:58.641 +05:00 [INF] Executed endpoint 'TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI)'
+2025-03-08 15:26:58.643 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/api/tasks?status=1 - 200 null application/json; charset=utf-8 15.876ms
+2025-03-08 15:27:02.431 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/api/tasks?status=3 - null null
+2025-03-08 15:27:02.433 +05:00 [INF] Executing endpoint 'TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI)'
+2025-03-08 15:27:02.435 +05:00 [INF] Route matched with {action = "GetAllTasks", controller = "Tasks"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllTasks(System.Nullable`1[System.Threading.Tasks.TaskStatus]) on controller TaskManagement.WebAPI.Controllers.TasksController (TaskManagement.WebAPI).
+2025-03-08 15:27:02.437 +05:00 [INF] Executing action method TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI) - Validation state: "Valid"
+2025-03-08 15:27:02.443 +05:00 [INF] Executed action method TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 4.1946ms.
+2025-03-08 15:27:02.444 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskManagement.Application.Entities.TaskEntity, TaskManagement.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 15:27:02.446 +05:00 [INF] Executed action TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI) in 8.8011ms
+2025-03-08 15:27:02.447 +05:00 [INF] Executed endpoint 'TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI)'
+2025-03-08 15:27:02.448 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/api/tasks?status=3 - 200 null application/json; charset=utf-8 17.3844ms
+2025-03-08 15:27:07.315 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/api/tasks?status=3 - null null
+2025-03-08 15:27:07.318 +05:00 [INF] Executing endpoint 'TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI)'
+2025-03-08 15:27:07.319 +05:00 [INF] Route matched with {action = "GetAllTasks", controller = "Tasks"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllTasks(System.Nullable`1[System.Threading.Tasks.TaskStatus]) on controller TaskManagement.WebAPI.Controllers.TasksController (TaskManagement.WebAPI).
+2025-03-08 15:27:07.322 +05:00 [INF] Executing action method TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI) - Validation state: "Valid"
+2025-03-08 15:27:07.325 +05:00 [INF] Executed action method TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1.1233ms.
+2025-03-08 15:27:07.327 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskManagement.Application.Entities.TaskEntity, TaskManagement.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 15:27:07.328 +05:00 [INF] Executed action TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI) in 6.6189ms
+2025-03-08 15:27:07.330 +05:00 [INF] Executed endpoint 'TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI)'
+2025-03-08 15:27:07.331 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/api/tasks?status=3 - 200 null application/json; charset=utf-8 16.1472ms
+2025-03-08 15:27:17.360 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/api/tasks?status=2 - null null
+2025-03-08 15:27:17.362 +05:00 [INF] Executing endpoint 'TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI)'
+2025-03-08 15:27:17.364 +05:00 [INF] Route matched with {action = "GetAllTasks", controller = "Tasks"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllTasks(System.Nullable`1[System.Threading.Tasks.TaskStatus]) on controller TaskManagement.WebAPI.Controllers.TasksController (TaskManagement.WebAPI).
+2025-03-08 15:27:17.366 +05:00 [INF] Executing action method TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI) - Validation state: "Valid"
+2025-03-08 15:27:17.369 +05:00 [INF] Executed action method TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1.0823ms.
+2025-03-08 15:27:17.371 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskManagement.Application.Entities.TaskEntity, TaskManagement.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 15:27:17.372 +05:00 [INF] Executed action TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI) in 5.7972ms
+2025-03-08 15:27:17.373 +05:00 [INF] Executed endpoint 'TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI)'
+2025-03-08 15:27:17.374 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/api/tasks?status=2 - 200 null application/json; charset=utf-8 14.6616ms
+2025-03-08 15:27:19.706 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/api/tasks?status=1 - null null
+2025-03-08 15:27:19.709 +05:00 [INF] Executing endpoint 'TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI)'
+2025-03-08 15:27:19.710 +05:00 [INF] Route matched with {action = "GetAllTasks", controller = "Tasks"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllTasks(System.Nullable`1[System.Threading.Tasks.TaskStatus]) on controller TaskManagement.WebAPI.Controllers.TasksController (TaskManagement.WebAPI).
+2025-03-08 15:27:19.712 +05:00 [INF] Executing action method TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI) - Validation state: "Valid"
+2025-03-08 15:27:19.715 +05:00 [INF] Executed action method TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1.0939ms.
+2025-03-08 15:27:19.717 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskManagement.Application.Entities.TaskEntity, TaskManagement.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 15:27:19.719 +05:00 [INF] Executed action TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI) in 6.8279ms
+2025-03-08 15:27:19.720 +05:00 [INF] Executed endpoint 'TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI)'
+2025-03-08 15:27:19.721 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/api/tasks?status=1 - 200 null application/json; charset=utf-8 14.6846ms
+2025-03-08 15:36:13.518 +05:00 [INF] Application is shutting down...
+2025-03-08 15:36:19.482 +05:00 [INF] Now listening on: http://localhost:5057
+2025-03-08 15:36:19.537 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-08 15:36:19.539 +05:00 [INF] Hosting environment: Development
+2025-03-08 15:36:19.540 +05:00 [INF] Content root path: C:\С#\Test_TaskManagement\TaskManagement.WebAPI
+2025-03-08 15:36:19.817 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/swagger/index.html - null null
+2025-03-08 15:36:20.010 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/swagger/index.html - 200 null text/html;charset=utf-8 195.1375ms
+2025-03-08 15:36:20.124 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/swagger/v1/swagger.json - null null
+2025-03-08 15:36:20.321 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 199.2182ms
+2025-03-08 15:36:46.515 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/api/tasks?status=0 - null null
+2025-03-08 15:36:46.528 +05:00 [WRN] Failed to determine the https port for redirect.
+2025-03-08 15:36:46.535 +05:00 [INF] Executing endpoint 'TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI)'
+2025-03-08 15:36:46.573 +05:00 [INF] Route matched with {action = "GetAllTasks", controller = "Tasks"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllTasks(System.Nullable`1[System.Threading.Tasks.TaskStatus]) on controller TaskManagement.WebAPI.Controllers.TasksController (TaskManagement.WebAPI).
+2025-03-08 15:36:46.604 +05:00 [INF] Executing action method TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI) - Validation state: "Valid"
+2025-03-08 15:36:47.345 +05:00 [INF] Executed action method TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 732.9672ms.
+2025-03-08 15:36:47.359 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskManagement.Application.Entities.TaskEntity, TaskManagement.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 15:36:47.380 +05:00 [INF] Executed action TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI) in 800.7272ms
+2025-03-08 15:36:47.383 +05:00 [INF] Executed endpoint 'TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI)'
+2025-03-08 15:36:47.389 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/api/tasks?status=0 - 200 null application/json; charset=utf-8 873.9753ms
+2025-03-08 15:36:49.739 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/api/tasks?status=1 - null null
+2025-03-08 15:36:49.742 +05:00 [INF] Executing endpoint 'TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI)'
+2025-03-08 15:36:49.743 +05:00 [INF] Route matched with {action = "GetAllTasks", controller = "Tasks"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllTasks(System.Nullable`1[System.Threading.Tasks.TaskStatus]) on controller TaskManagement.WebAPI.Controllers.TasksController (TaskManagement.WebAPI).
+2025-03-08 15:36:49.747 +05:00 [INF] Executing action method TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI) - Validation state: "Valid"
+2025-03-08 15:36:49.779 +05:00 [INF] Executed action method TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 30.9716ms.
+2025-03-08 15:36:49.782 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskManagement.Application.Entities.TaskEntity, TaskManagement.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 15:36:49.783 +05:00 [INF] Executed action TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI) in 37.7868ms
+2025-03-08 15:36:49.785 +05:00 [INF] Executed endpoint 'TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI)'
+2025-03-08 15:36:49.786 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/api/tasks?status=1 - 200 null application/json; charset=utf-8 47.6636ms
+2025-03-08 15:36:52.029 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/api/tasks?status=2 - null null
+2025-03-08 15:36:52.033 +05:00 [INF] Executing endpoint 'TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI)'
+2025-03-08 15:36:52.034 +05:00 [INF] Route matched with {action = "GetAllTasks", controller = "Tasks"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllTasks(System.Nullable`1[System.Threading.Tasks.TaskStatus]) on controller TaskManagement.WebAPI.Controllers.TasksController (TaskManagement.WebAPI).
+2025-03-08 15:36:52.037 +05:00 [INF] Executing action method TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI) - Validation state: "Valid"
+2025-03-08 15:36:52.042 +05:00 [INF] Executed action method TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 3.5684ms.
+2025-03-08 15:36:52.045 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskManagement.Application.Entities.TaskEntity, TaskManagement.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 15:36:52.047 +05:00 [INF] Executed action TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI) in 10.6142ms
+2025-03-08 15:36:52.048 +05:00 [INF] Executed endpoint 'TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI)'
+2025-03-08 15:36:52.049 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/api/tasks?status=2 - 200 null application/json; charset=utf-8 19.7302ms
+2025-03-08 15:36:54.502 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/api/tasks?status=3 - null null
+2025-03-08 15:36:54.505 +05:00 [INF] Executing endpoint 'TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI)'
+2025-03-08 15:36:54.507 +05:00 [INF] Route matched with {action = "GetAllTasks", controller = "Tasks"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllTasks(System.Nullable`1[System.Threading.Tasks.TaskStatus]) on controller TaskManagement.WebAPI.Controllers.TasksController (TaskManagement.WebAPI).
+2025-03-08 15:36:54.512 +05:00 [INF] Executing action method TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI) - Validation state: "Valid"
+2025-03-08 15:36:54.517 +05:00 [INF] Executed action method TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 2.8029ms.
+2025-03-08 15:36:54.519 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskManagement.Application.Entities.TaskEntity, TaskManagement.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 15:36:54.521 +05:00 [INF] Executed action TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI) in 10.097ms
+2025-03-08 15:36:54.523 +05:00 [INF] Executed endpoint 'TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI)'
+2025-03-08 15:36:54.524 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/api/tasks?status=3 - 200 null application/json; charset=utf-8 22.4868ms
+2025-03-08 15:37:42.463 +05:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5057/api/tasks/017d2adf-9823-454d-bd37-13f1d56f36b7 - application/json 135
+2025-03-08 15:37:42.468 +05:00 [INF] Executing endpoint 'TaskManagement.WebAPI.Controllers.TasksController.UpdateTask (TaskManagement.WebAPI)'
+2025-03-08 15:37:42.476 +05:00 [INF] Route matched with {action = "UpdateTask", controller = "Tasks"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateTask(System.Guid, TaskManagement.Application.Features.Tasks.Commands.UpdateTaskCommand) on controller TaskManagement.WebAPI.Controllers.TasksController (TaskManagement.WebAPI).
+2025-03-08 15:37:42.505 +05:00 [INF] Executing action method TaskManagement.WebAPI.Controllers.TasksController.UpdateTask (TaskManagement.WebAPI) - Validation state: "Valid"
+2025-03-08 15:37:42.622 +05:00 [INF] Executed action method TaskManagement.WebAPI.Controllers.TasksController.UpdateTask (TaskManagement.WebAPI), returned result Microsoft.AspNetCore.Mvc.NoContentResult in 115.2789ms.
+2025-03-08 15:37:42.629 +05:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2025-03-08 15:37:42.630 +05:00 [INF] Executed action TaskManagement.WebAPI.Controllers.TasksController.UpdateTask (TaskManagement.WebAPI) in 151.9278ms
+2025-03-08 15:37:42.632 +05:00 [INF] Executed endpoint 'TaskManagement.WebAPI.Controllers.TasksController.UpdateTask (TaskManagement.WebAPI)'
+2025-03-08 15:37:42.634 +05:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5057/api/tasks/017d2adf-9823-454d-bd37-13f1d56f36b7 - 204 null null 170.5933ms
+2025-03-08 15:37:46.353 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/api/tasks?status=3 - null null
+2025-03-08 15:37:46.355 +05:00 [INF] Executing endpoint 'TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI)'
+2025-03-08 15:37:46.357 +05:00 [INF] Route matched with {action = "GetAllTasks", controller = "Tasks"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllTasks(System.Nullable`1[System.Threading.Tasks.TaskStatus]) on controller TaskManagement.WebAPI.Controllers.TasksController (TaskManagement.WebAPI).
+2025-03-08 15:37:46.360 +05:00 [INF] Executing action method TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI) - Validation state: "Valid"
+2025-03-08 15:37:46.363 +05:00 [INF] Executed action method TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1.9952ms.
+2025-03-08 15:37:46.365 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskManagement.Application.Entities.TaskEntity, TaskManagement.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 15:37:46.366 +05:00 [INF] Executed action TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI) in 6.8594ms
+2025-03-08 15:37:46.368 +05:00 [INF] Executed endpoint 'TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI)'
+2025-03-08 15:37:46.369 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/api/tasks?status=3 - 200 null application/json; charset=utf-8 16.0839ms
+2025-03-08 15:37:50.679 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/api/tasks?status=1 - null null
+2025-03-08 15:37:50.682 +05:00 [INF] Executing endpoint 'TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI)'
+2025-03-08 15:37:50.683 +05:00 [INF] Route matched with {action = "GetAllTasks", controller = "Tasks"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllTasks(System.Nullable`1[System.Threading.Tasks.TaskStatus]) on controller TaskManagement.WebAPI.Controllers.TasksController (TaskManagement.WebAPI).
+2025-03-08 15:37:50.686 +05:00 [INF] Executing action method TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI) - Validation state: "Valid"
+2025-03-08 15:37:50.690 +05:00 [INF] Executed action method TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 2.5907ms.
+2025-03-08 15:37:50.693 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskManagement.Application.Entities.TaskEntity, TaskManagement.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 15:37:50.695 +05:00 [INF] Executed action TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI) in 9.42ms
+2025-03-08 15:37:50.697 +05:00 [INF] Executed endpoint 'TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI)'
+2025-03-08 15:37:50.698 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/api/tasks?status=1 - 200 null application/json; charset=utf-8 18.9503ms
+2025-03-08 15:38:27.696 +05:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5057/api/tasks/017d2adf-9823-454d-bd37-13f1d56f36b7 - application/json 135
+2025-03-08 15:38:27.699 +05:00 [INF] Executing endpoint 'TaskManagement.WebAPI.Controllers.TasksController.UpdateTask (TaskManagement.WebAPI)'
+2025-03-08 15:38:27.701 +05:00 [INF] Route matched with {action = "UpdateTask", controller = "Tasks"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateTask(System.Guid, TaskManagement.Application.Features.Tasks.Commands.UpdateTaskCommand) on controller TaskManagement.WebAPI.Controllers.TasksController (TaskManagement.WebAPI).
+2025-03-08 15:38:27.704 +05:00 [INF] Executing action method TaskManagement.WebAPI.Controllers.TasksController.UpdateTask (TaskManagement.WebAPI) - Validation state: "Valid"
+2025-03-08 15:38:27.722 +05:00 [INF] Executed action method TaskManagement.WebAPI.Controllers.TasksController.UpdateTask (TaskManagement.WebAPI), returned result Microsoft.AspNetCore.Mvc.NoContentResult in 17.5748ms.
+2025-03-08 15:38:27.724 +05:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2025-03-08 15:38:27.726 +05:00 [INF] Executed action TaskManagement.WebAPI.Controllers.TasksController.UpdateTask (TaskManagement.WebAPI) in 23.038ms
+2025-03-08 15:38:27.727 +05:00 [INF] Executed endpoint 'TaskManagement.WebAPI.Controllers.TasksController.UpdateTask (TaskManagement.WebAPI)'
+2025-03-08 15:38:27.729 +05:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5057/api/tasks/017d2adf-9823-454d-bd37-13f1d56f36b7 - 204 null null 32.1997ms
+2025-03-08 15:38:43.164 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/api/tasks/017d2adf-9823-454d-bd37-13f1d56f36b7 - null null
+2025-03-08 15:38:43.167 +05:00 [INF] Executing endpoint 'TaskManagement.WebAPI.Controllers.TasksController.GetTaskById (TaskManagement.WebAPI)'
+2025-03-08 15:38:43.172 +05:00 [INF] Route matched with {action = "GetTaskById", controller = "Tasks"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetTaskById(System.Guid) on controller TaskManagement.WebAPI.Controllers.TasksController (TaskManagement.WebAPI).
+2025-03-08 15:38:43.174 +05:00 [INF] Executing action method TaskManagement.WebAPI.Controllers.TasksController.GetTaskById (TaskManagement.WebAPI) - Validation state: "Valid"
+2025-03-08 15:38:43.179 +05:00 [INF] Executed action method TaskManagement.WebAPI.Controllers.TasksController.GetTaskById (TaskManagement.WebAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 4.0458ms.
+2025-03-08 15:38:43.181 +05:00 [INF] Executing OkObjectResult, writing value of type 'TaskManagement.Application.Entities.TaskEntity'.
+2025-03-08 15:38:43.183 +05:00 [INF] Executed action TaskManagement.WebAPI.Controllers.TasksController.GetTaskById (TaskManagement.WebAPI) in 8.8665ms
+2025-03-08 15:38:43.184 +05:00 [INF] Executed endpoint 'TaskManagement.WebAPI.Controllers.TasksController.GetTaskById (TaskManagement.WebAPI)'
+2025-03-08 15:38:43.185 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/api/tasks/017d2adf-9823-454d-bd37-13f1d56f36b7 - 200 null application/json; charset=utf-8 21.15ms
+2025-03-08 15:44:30.744 +05:00 [INF] Application is shutting down...
+2025-03-08 15:44:35.752 +05:00 [INF] Now listening on: http://localhost:5057
+2025-03-08 15:44:35.847 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-08 15:44:35.849 +05:00 [INF] Hosting environment: Development
+2025-03-08 15:44:35.851 +05:00 [INF] Content root path: C:\С#\Test_TaskManagement\TaskManagement.WebAPI
+2025-03-08 15:44:36.277 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/swagger/index.html - null null
+2025-03-08 15:44:36.569 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/swagger/index.html - 200 null text/html;charset=utf-8 293.0945ms
+2025-03-08 15:44:36.680 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/swagger/v1/swagger.json - null null
+2025-03-08 15:44:37.010 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 330.9408ms
+2025-03-08 15:44:45.909 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5057/api/tasks - application/json 44
+2025-03-08 15:44:45.923 +05:00 [WRN] Failed to determine the https port for redirect.
+2025-03-08 15:44:45.931 +05:00 [INF] Executing endpoint 'TaskManagement.WebAPI.Controllers.TasksController.CreateTask (TaskManagement.WebAPI)'
+2025-03-08 15:44:45.969 +05:00 [INF] Route matched with {action = "CreateTask", controller = "Tasks"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateTask(TaskManagement.Application.Features.Tasks.Commands.CreateTaskCommand) on controller TaskManagement.WebAPI.Controllers.TasksController (TaskManagement.WebAPI).
+2025-03-08 15:44:46.063 +05:00 [INF] Executing action method TaskManagement.WebAPI.Controllers.TasksController.CreateTask (TaskManagement.WebAPI) - Validation state: "Valid"
+2025-03-08 15:44:46.284 +05:00 [INF] Executed action TaskManagement.WebAPI.Controllers.TasksController.CreateTask (TaskManagement.WebAPI) in 307.3189ms
+2025-03-08 15:44:46.287 +05:00 [INF] Executed endpoint 'TaskManagement.WebAPI.Controllers.TasksController.CreateTask (TaskManagement.WebAPI)'
+2025-03-08 15:44:46.309 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5057/api/tasks - 400 null application/json 400.6161ms
+2025-03-08 15:45:32.223 +05:00 [INF] Application is shutting down...

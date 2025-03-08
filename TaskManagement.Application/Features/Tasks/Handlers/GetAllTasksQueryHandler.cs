@@ -3,6 +3,7 @@ using TaskManagement.Application.Entities;
 using TaskManagement.Application.Features.Tasks.Queries;
 using TaskManagement.Application.Interfaces;
 using FluentValidation;
+using TaskStatus = TaskManagement.Application.Entities.TaskStatus;
 
 namespace TaskManagement.Application.Features.Tasks.Handlers;
 
@@ -21,30 +22,47 @@ public class GetAllTasksQueryHandler : IRequestHandler<GetAllTasksQuery, List<Ta
 
     public async Task<List<TaskEntity>> Handle(GetAllTasksQuery request, CancellationToken cancellationToken)
     {
-        // Валидация
+        //Валидация запроса
         var validationResult = await _validator.ValidateAsync(request, cancellationToken);
         if (!validationResult.IsValid)
         {
             throw new ValidationException(validationResult.Errors);
         }
 
-        string cacheKey = "tasks";
+        // Загружаем ID всех задач из БД
+        var allTasks = (await _taskRepository.GetAllAsync()).ToList();
 
-        // Проверяем, есть ли данные в кэше
-        var cachedTasks = await _cacheService.GetAsync<List<TaskEntity>>(cacheKey);
-        if (cachedTasks is not null)
+        if (!allTasks.Any()) return new List<TaskEntity>(); // Если задач нет — возвращаем пустой список
+
+        var tasks = new List<TaskEntity>();
+
+        foreach (var task in allTasks)
         {
-            Console.WriteLine("Данные получены из кэша!");
-            return cachedTasks;
+            string cacheKey = $"task_{task.Id}";
+
+            // Проверяем, есть ли конкретная задача в кэше
+            var cachedTask = await _cacheService.GetAsync<TaskEntity>(cacheKey);
+            if (cachedTask is not null)
+            {
+                tasks.Add(cachedTask);
+                Console.WriteLine($"Задача {task.Id} получена из Redis.");
+            }
+            else
+            {
+                // Если задачи нет в кэше, добавляем её туда
+                await _cacheService.SetAsync(cacheKey, task, TimeSpan.FromMinutes(10));
+                Console.WriteLine($"Задача {task.Id} добавлена в Redis.");
+                tasks.Add(task);
+            }
         }
 
-        // Загружаем из БД через Dapper
-        var tasks = (await _taskRepository.GetAllAsync()).ToList();
-
-        // Кэшируем результат
-        await _cacheService.SetAsync(cacheKey, tasks, TimeSpan.FromMinutes(10));
-        Console.WriteLine("Данные сохранены в Redis!");
+        // 🔹 Фильтруем задачи, если передан статус
+        if (request.Status.HasValue)
+        {
+            tasks = tasks.Where(t => t.Status == (TaskStatus)request.Status.Value).ToList();
+        }
 
         return tasks;
     }
+
 }

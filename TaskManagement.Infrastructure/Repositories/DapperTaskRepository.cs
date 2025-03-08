@@ -19,12 +19,20 @@ public class DapperTaskRepository : ITaskRepository
 
     private IDbConnection CreateConnection() => new NpgsqlConnection(_connectionString);
 
-    public async Task<IEnumerable<TaskEntity>> GetAllAsync()
+    public async Task<IEnumerable<TaskEntity>> GetAllAsync(int? status = null)
     {
         using var connection = CreateConnection();
-        var sql = "SELECT * FROM public.\"Tasks\""; // ✅ Добавлены кавычки
+        var sql = "SELECT * FROM public.\"Tasks\"";
+
+        if (status.HasValue)
+        {
+            sql += " WHERE \"Status\" = @Status";
+            return await connection.QueryAsync<TaskEntity>(sql, new { Status = status.Value });
+        }
+
         return await connection.QueryAsync<TaskEntity>(sql);
     }
+
 
     public async Task<TaskEntity?> GetByIdAsync(Guid id)
     {
@@ -53,11 +61,16 @@ public class DapperTaskRepository : ITaskRepository
     {
         using var connection = CreateConnection();
         var sql = @"
-        UPDATE public.""Tasks""
-        SET ""Title"" = @Title, ""Description"" = @Description, ""Status"" = @Status, ""UpdatedAt"" = @UpdatedAt
-        WHERE ""Id"" = @Id";
+            UPDATE public.""Tasks""
+            SET ""Title"" = @Title, 
+                ""Description"" = @Description, 
+                ""Status"" = @Status, 
+                ""UpdatedAt"" = CASE 
+                    WHEN ""Status"" != @Status THEN NOW()
+                    ELSE ""UpdatedAt""
+                END
+            WHERE ""Id"" = @Id";
 
-        task.UpdatedAt = DateTime.UtcNow;
         var rowsAffected = await connection.ExecuteAsync(sql, task);
         return rowsAffected > 0;
     }

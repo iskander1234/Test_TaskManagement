@@ -54,8 +54,9 @@ public class CreateTaskCommandHandler : IRequestHandler<CreateTaskCommand, Guid>
         await _taskRepository.CreateAsync(task);
 
         // Обновляем кэш
-        await _cacheService.RemoveAsync("tasks");
-        Console.WriteLine("Кэш очищен после добавления новой задачи!");
+        string cacheKey = $"task_{task.Id}";
+        await _cacheService.SetAsync(cacheKey, task, TimeSpan.FromMinutes(10));
+        Console.WriteLine($"📝 Сохранено в Redis: {cacheKey}");
 
         return task.Id;
     }
