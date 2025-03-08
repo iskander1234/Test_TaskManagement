@@ -1,20 +1,25 @@
 ﻿using Microsoft.Extensions.Logging;
 using MassTransit;
+using TaskManagement.Application.Interfaces;
 
 namespace TaskManagement.Application.Evets;
 
 public class TaskCreatedEventHandler : IConsumer<TaskCreatedEvent>
 {
+    private readonly ISignalRService _signalRService;
     private readonly ILogger<TaskCreatedEventHandler> _logger;
 
-    public TaskCreatedEventHandler(ILogger<TaskCreatedEventHandler> logger)
+    public TaskCreatedEventHandler(ISignalRService signalRService, ILogger<TaskCreatedEventHandler> logger)
     {
+        _signalRService = signalRService;
         _logger = logger;
     }
 
-    public Task Consume(ConsumeContext<TaskCreatedEvent> context)
+    public async Task Consume(ConsumeContext<TaskCreatedEvent> context)
     {
-        Console.WriteLine($"Получено событие: {context.Message.TaskId} - {context.Message.Title}");
-        return Task.CompletedTask;
+        _logger.LogInformation($"Новая задача создана: {context.Message.TaskId} - {context.Message.Title}");
+
+        // Уведомляем всех клиентов через SignalR
+        await _signalRService.SendTaskUpdate(context.Message.TaskId.ToString(), context.Message.Title, 0);
     }
 }

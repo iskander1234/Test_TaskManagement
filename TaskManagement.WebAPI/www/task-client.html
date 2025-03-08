@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Task Updates</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/7.0.5/signalr.min.js"></script>
+</head>
+<body>
+<h2>Обновления задач в реальном времени</h2>
+<ul id="taskUpdates"></ul>
+
+<script>
+    const connection = new signalR.HubConnectionBuilder()
+        .withUrl("http://localhost:5057/taskHub")
+        .configureLogging(signalR.LogLevel.Information)
+        .build();
+
+    connection.on("ReceiveTaskUpdate", (taskId, title, status) => {
+        const listItem = document.createElement("li");
+        listItem.textContent = `Задача обновлена: ${title} (ID: ${taskId}), новый статус: ${status}`;
+        document.getElementById("taskUpdates").appendChild(listItem);
+    });
+
+    connection.start().catch(err => console.error(err));
+</script>
+</body>
+</html>

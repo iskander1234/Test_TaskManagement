@@ -1,12 +1,12 @@
 using Hangfire;
 using Hangfire.PostgreSql;
 using MassTransit;
-using TaskManagement.Application;
 using TaskManagement.Infrastructure;
 using TaskManagement.WebAPI.Middlewares;
 using Serilog;
 using TaskManagement.Application.Background;
 using TaskManagement.Application.Evets;
+using TaskManagement.Infrastructure.Hubs;
 
 var builder = WebApplication.CreateBuilder(args);
 var configuration = builder.Configuration;
@@ -15,8 +15,9 @@ var configuration = builder.Configuration;
 builder.Services.AddApplication();
 builder.Services.AddInfrastructure(configuration);
 
-// Добавляем контроллеры
+// Добавляем контроллеры и SignalR
 builder.Services.AddControllers();
+builder.Services.AddSignalR();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
@@ -56,6 +57,16 @@ builder.Services.AddMassTransit(x =>
     });
 });
 
+builder.Services.AddCors(options =>
+{
+    options.AddDefaultPolicy(policy =>
+    {
+        policy.AllowAnyOrigin()
+            .AllowAnyHeader()
+            .AllowAnyMethod();
+    });
+});
+
 var app = builder.Build();
 
 if (app.Environment.IsDevelopment())
@@ -64,22 +75,33 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+app.UseCors();
+
+// Добавляем маршрутизацию перед использованием эндпоинтов!
+app.UseRouting();
+
 // Middleware для обработки ошибок
 app.UseMiddleware<ValidationExceptionMiddleware>();
 
 app.UseHttpsRedirection();
 app.UseAuthorization();
-app.MapControllers();
 
-// ✅ Добавляем Hangfire Dashboard
+// Настраиваем маршруты правильно
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapControllers();
+    endpoints.MapHub<TaskHub>("/taskHub"); // Добавляем SignalR хаб
+});
+
+// Добавляем Hangfire Dashboard
 app.UseHangfireDashboard();
 
-// ✅ Регистрируем фоновое задание после инициализации Hangfire
+// Регистрируем фоновое задание после инициализации Hangfire
 using (var scope = app.Services.CreateScope())
 {
     var recurringJobManager = scope.ServiceProvider.GetRequiredService<IRecurringJobManager>();
 
-    // 📌 Запускаем задание каждую ночь в 00:00 (UTC)
+    // Запускаем задание каждую ночь в 00:00 (UTC)
     recurringJobManager.AddOrUpdate(
         "archive-old-tasks",
         () => scope.ServiceProvider.GetRequiredService<BackgroundJobs>().ArchiveOldTasks(),

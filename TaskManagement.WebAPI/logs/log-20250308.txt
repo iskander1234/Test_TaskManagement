@@ -2196,3 +2196,222 @@ MassTransit.RabbitMqConnectionException: Broker unreachable: guest@localhost:567
 2025-03-08 17:01:35.525 +05:00 [INF] Server desktop-a8i2h77:34312:01877112 successfully reported itself as stopped in 2,799 ms
 2025-03-08 17:01:35.526 +05:00 [INF] Server desktop-a8i2h77:34312:01877112 has been stopped in total 13,2256 ms
 2025-03-08 17:01:35.709 +05:00 [INF] Bus stopped: "rabbitmq://localhost/"
+2025-03-08 17:44:39.279 +05:00 [INF] Start installing Hangfire SQL objects...
+2025-03-08 17:44:39.407 +05:00 [INF] Hangfire SQL objects installed.
+2025-03-08 17:44:39.862 +05:00 [INF] Configured endpoint task-created-queue, Consumer: TaskManagement.Application.Evets.TaskCreatedEventHandler
+2025-03-08 17:44:40.058 +05:00 [INF] Now listening on: http://localhost:5057
+2025-03-08 17:44:40.065 +05:00 [INF] Starting Hangfire Server using job storage: 'PostgreSQL Server: Host: localhost, DB: TaskManagementDb2, Schema: hangfire'
+2025-03-08 17:44:40.066 +05:00 [INF] Using the following options for PostgreSQL job storage:
+2025-03-08 17:44:40.067 +05:00 [INF]     Queue poll interval: 00:00:15.
+2025-03-08 17:44:40.068 +05:00 [INF]     Invisibility timeout: 00:30:00.
+2025-03-08 17:44:40.068 +05:00 [INF]     Use sliding invisibility timeout: False.
+2025-03-08 17:44:40.069 +05:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2025-03-08 17:44:40.084 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-08 17:44:40.085 +05:00 [INF] Hosting environment: Development
+2025-03-08 17:44:40.086 +05:00 [INF] Content root path: C:\С#\Test_TaskManagement\TaskManagement.WebAPI
+2025-03-08 17:44:40.121 +05:00 [INF] Server desktop-a8i2h77:31260:edb1ac48 successfully announced in 33,8497 ms
+2025-03-08 17:44:40.127 +05:00 [INF] Server desktop-a8i2h77:31260:edb1ac48 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2025-03-08 17:44:40.179 +05:00 [INF] Server desktop-a8i2h77:31260:edb1ac48 all the dispatchers started
+2025-03-08 17:44:40.466 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/swagger/index.html - null null
+2025-03-08 17:44:40.699 +05:00 [INF] Bus started: "rabbitmq://localhost/"
+2025-03-08 17:44:40.766 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/swagger/index.html - 200 null text/html;charset=utf-8 300.4542ms
+2025-03-08 17:44:40.882 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/swagger/v1/swagger.json - null null
+2025-03-08 17:44:41.105 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 225.6814ms
+2025-03-08 17:45:03.606 +05:00 [INF] Server desktop-a8i2h77:31260:edb1ac48 caught stopping signal...
+2025-03-08 17:45:03.608 +05:00 [INF] Application is shutting down...
+2025-03-08 17:45:03.611 +05:00 [INF] Server desktop-a8i2h77:31260:edb1ac48 All dispatchers stopped
+2025-03-08 17:45:03.631 +05:00 [INF] Server desktop-a8i2h77:31260:edb1ac48 successfully reported itself as stopped in 16,8449 ms
+2025-03-08 17:45:03.632 +05:00 [INF] Server desktop-a8i2h77:31260:edb1ac48 has been stopped in total 24,6262 ms
+2025-03-08 17:45:03.758 +05:00 [INF] Bus stopped: "rabbitmq://localhost/"
+2025-03-08 17:45:27.335 +05:00 [INF] Start installing Hangfire SQL objects...
+2025-03-08 17:45:27.454 +05:00 [INF] Hangfire SQL objects installed.
+2025-03-08 17:45:27.854 +05:00 [INF] Configured endpoint task-created-queue, Consumer: TaskManagement.Application.Evets.TaskCreatedEventHandler
+2025-03-08 17:45:28.048 +05:00 [INF] Now listening on: http://localhost:5057
+2025-03-08 17:45:28.055 +05:00 [INF] Starting Hangfire Server using job storage: 'PostgreSQL Server: Host: localhost, DB: TaskManagementDb2, Schema: hangfire'
+2025-03-08 17:45:28.056 +05:00 [INF] Using the following options for PostgreSQL job storage:
+2025-03-08 17:45:28.057 +05:00 [INF]     Queue poll interval: 00:00:15.
+2025-03-08 17:45:28.058 +05:00 [INF]     Invisibility timeout: 00:30:00.
+2025-03-08 17:45:28.058 +05:00 [INF]     Use sliding invisibility timeout: False.
+2025-03-08 17:45:28.059 +05:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2025-03-08 17:45:28.074 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-08 17:45:28.075 +05:00 [INF] Hosting environment: Development
+2025-03-08 17:45:28.077 +05:00 [INF] Content root path: C:\С#\Test_TaskManagement\TaskManagement.WebAPI
+2025-03-08 17:45:28.099 +05:00 [INF] Server desktop-a8i2h77:26848:2390e9d1 successfully announced in 19,6061 ms
+2025-03-08 17:45:28.102 +05:00 [INF] Server desktop-a8i2h77:26848:2390e9d1 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2025-03-08 17:45:28.113 +05:00 [INF] Server desktop-a8i2h77:26848:2390e9d1 all the dispatchers started
+2025-03-08 17:45:28.489 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/swagger/index.html - null null
+2025-03-08 17:45:28.525 +05:00 [INF] Bus started: "rabbitmq://localhost/"
+2025-03-08 17:45:28.680 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/swagger/index.html - 200 null text/html;charset=utf-8 193.0383ms
+2025-03-08 17:45:28.774 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/swagger/v1/swagger.json - null null
+2025-03-08 17:45:28.946 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 172.8395ms
+2025-03-08 17:45:31.953 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/taskHub - null null
+2025-03-08 17:45:31.997 +05:00 [INF] Executing endpoint '/taskHub'
+2025-03-08 17:45:32.006 +05:00 [INF] Executed endpoint '/taskHub'
+2025-03-08 17:45:32.007 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/taskHub - 400 null text/plain 54.9016ms
+2025-03-08 17:45:32.033 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/favicon.ico - null null
+2025-03-08 17:45:32.044 +05:00 [WRN] Failed to determine the https port for redirect.
+2025-03-08 17:45:32.051 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/favicon.ico - 404 0 null 17.977ms
+2025-03-08 17:45:32.055 +05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5057/favicon.ico, Response status code: 404
+2025-03-08 17:45:33.527 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/taskHub - null null
+2025-03-08 17:45:33.531 +05:00 [INF] Executing endpoint '/taskHub'
+2025-03-08 17:45:33.533 +05:00 [INF] Executed endpoint '/taskHub'
+2025-03-08 17:45:33.534 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/taskHub - 400 null text/plain 6.9259ms
+2025-03-08 17:45:33.601 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/favicon.ico - null null
+2025-03-08 17:45:33.609 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/favicon.ico - 404 0 null 7.543ms
+2025-03-08 17:45:33.616 +05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5057/favicon.ico, Response status code: 404
+2025-03-08 17:45:41.941 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/taskHub - null null
+2025-03-08 17:45:41.944 +05:00 [INF] Executing endpoint '/taskHub'
+2025-03-08 17:45:41.945 +05:00 [INF] Executed endpoint '/taskHub'
+2025-03-08 17:45:41.947 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/taskHub - 400 null text/plain 5.9407ms
+2025-03-08 17:52:44.140 +05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5057/taskHub/negotiate?negotiateVersion=1 - null null
+2025-03-08 17:52:44.143 +05:00 [INF] Executing endpoint '/taskHub/negotiate'
+2025-03-08 17:52:44.144 +05:00 [INF] Executed endpoint '/taskHub/negotiate'
+2025-03-08 17:52:44.145 +05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5057/taskHub/negotiate?negotiateVersion=1 - 405 0 text/plain 4.6017ms
+2025-03-08 17:52:50.799 +05:00 [INF] Server desktop-a8i2h77:26848:2390e9d1 caught stopping signal...
+2025-03-08 17:52:50.802 +05:00 [INF] Application is shutting down...
+2025-03-08 17:52:50.805 +05:00 [INF] Server desktop-a8i2h77:26848:2390e9d1 All dispatchers stopped
+2025-03-08 17:52:50.825 +05:00 [INF] Server desktop-a8i2h77:26848:2390e9d1 successfully reported itself as stopped in 15,9347 ms
+2025-03-08 17:52:50.826 +05:00 [INF] Server desktop-a8i2h77:26848:2390e9d1 has been stopped in total 24,2426 ms
+2025-03-08 17:52:50.935 +05:00 [INF] Bus stopped: "rabbitmq://localhost/"
+2025-03-08 17:52:57.035 +05:00 [INF] Start installing Hangfire SQL objects...
+2025-03-08 17:52:57.159 +05:00 [INF] Hangfire SQL objects installed.
+2025-03-08 17:52:57.596 +05:00 [INF] Configured endpoint task-created-queue, Consumer: TaskManagement.Application.Evets.TaskCreatedEventHandler
+2025-03-08 17:52:57.809 +05:00 [INF] Now listening on: http://localhost:5057
+2025-03-08 17:52:57.816 +05:00 [INF] Starting Hangfire Server using job storage: 'PostgreSQL Server: Host: localhost, DB: TaskManagementDb2, Schema: hangfire'
+2025-03-08 17:52:57.818 +05:00 [INF] Using the following options for PostgreSQL job storage:
+2025-03-08 17:52:57.819 +05:00 [INF]     Queue poll interval: 00:00:15.
+2025-03-08 17:52:57.819 +05:00 [INF]     Invisibility timeout: 00:30:00.
+2025-03-08 17:52:57.820 +05:00 [INF]     Use sliding invisibility timeout: False.
+2025-03-08 17:52:57.820 +05:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2025-03-08 17:52:57.837 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-08 17:52:57.839 +05:00 [INF] Hosting environment: Development
+2025-03-08 17:52:57.839 +05:00 [INF] Content root path: C:\С#\Test_TaskManagement\TaskManagement.WebAPI
+2025-03-08 17:52:57.876 +05:00 [INF] Server desktop-a8i2h77:36728:e10011b0 successfully announced in 34,7676 ms
+2025-03-08 17:52:57.881 +05:00 [INF] Server desktop-a8i2h77:36728:e10011b0 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2025-03-08 17:52:57.891 +05:00 [INF] Server desktop-a8i2h77:36728:e10011b0 all the dispatchers started
+2025-03-08 17:52:58.222 +05:00 [INF] Bus started: "rabbitmq://localhost/"
+2025-03-08 17:52:58.447 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/swagger/index.html - null null
+2025-03-08 17:52:58.709 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/swagger/index.html - 200 null text/html;charset=utf-8 262.5194ms
+2025-03-08 17:52:58.810 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/swagger/v1/swagger.json - null null
+2025-03-08 17:52:59.025 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 215.7873ms
+2025-03-08 17:53:03.373 +05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5057/taskHub/negotiate?negotiateVersion=1 - null null
+2025-03-08 17:53:03.425 +05:00 [INF] Executing endpoint '/taskHub/negotiate'
+2025-03-08 17:53:03.429 +05:00 [INF] Executed endpoint '/taskHub/negotiate'
+2025-03-08 17:53:03.431 +05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5057/taskHub/negotiate?negotiateVersion=1 - 405 0 text/plain 58.2904ms
+2025-03-08 17:53:24.149 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/api/tasks?status=0 - null null
+2025-03-08 17:53:24.154 +05:00 [INF] Executing endpoint 'TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI)'
+2025-03-08 17:53:24.207 +05:00 [INF] Route matched with {action = "GetAllTasks", controller = "Tasks"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllTasks(System.Nullable`1[System.Threading.Tasks.TaskStatus]) on controller TaskManagement.WebAPI.Controllers.TasksController (TaskManagement.WebAPI).
+2025-03-08 17:53:24.244 +05:00 [INF] Executing action method TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI) - Validation state: "Valid"
+2025-03-08 17:53:24.614 +05:00 [INF] Executed action method TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 364.9615ms.
+2025-03-08 17:53:24.630 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskManagement.Application.Entities.TaskEntity, TaskManagement.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 17:53:24.651 +05:00 [INF] Executed action TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI) in 437.3644ms
+2025-03-08 17:53:24.654 +05:00 [INF] Executed endpoint 'TaskManagement.WebAPI.Controllers.TasksController.GetAllTasks (TaskManagement.WebAPI)'
+2025-03-08 17:53:24.658 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/api/tasks?status=0 - 200 null application/json; charset=utf-8 508.3594ms
+2025-03-08 17:54:09.498 +05:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5057/api/tasks/017d2adf-9823-454d-bd37-13f1d56f36b7 - application/json 119
+2025-03-08 17:54:09.500 +05:00 [INF] Executing endpoint 'TaskManagement.WebAPI.Controllers.TasksController.UpdateTask (TaskManagement.WebAPI)'
+2025-03-08 17:54:09.523 +05:00 [INF] Route matched with {action = "UpdateTask", controller = "Tasks"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateTask(System.Guid, TaskManagement.Application.Features.Tasks.Commands.UpdateTaskCommand) on controller TaskManagement.WebAPI.Controllers.TasksController (TaskManagement.WebAPI).
+2025-03-08 17:54:09.565 +05:00 [INF] Executing action method TaskManagement.WebAPI.Controllers.TasksController.UpdateTask (TaskManagement.WebAPI) - Validation state: "Valid"
+2025-03-08 17:54:09.644 +05:00 [INF] Executed action method TaskManagement.WebAPI.Controllers.TasksController.UpdateTask (TaskManagement.WebAPI), returned result Microsoft.AspNetCore.Mvc.NoContentResult in 77.0039ms.
+2025-03-08 17:54:09.650 +05:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2025-03-08 17:54:09.652 +05:00 [INF] Executed action TaskManagement.WebAPI.Controllers.TasksController.UpdateTask (TaskManagement.WebAPI) in 126.918ms
+2025-03-08 17:54:09.653 +05:00 [INF] Executed endpoint 'TaskManagement.WebAPI.Controllers.TasksController.UpdateTask (TaskManagement.WebAPI)'
+2025-03-08 17:54:09.655 +05:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5057/api/tasks/017d2adf-9823-454d-bd37-13f1d56f36b7 - 204 null null 156.5234ms
+2025-03-08 17:54:13.028 +05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5057/taskHub/negotiate?negotiateVersion=1 - null null
+2025-03-08 17:54:13.031 +05:00 [INF] Executing endpoint '/taskHub/negotiate'
+2025-03-08 17:54:13.033 +05:00 [INF] Executed endpoint '/taskHub/negotiate'
+2025-03-08 17:54:13.034 +05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5057/taskHub/negotiate?negotiateVersion=1 - 405 0 text/plain 6.1547ms
+2025-03-08 18:11:15.306 +05:00 [INF] Server desktop-a8i2h77:36728:e10011b0 caught stopping signal...
+2025-03-08 18:11:15.308 +05:00 [INF] Application is shutting down...
+2025-03-08 18:11:15.311 +05:00 [INF] Server desktop-a8i2h77:36728:e10011b0 All dispatchers stopped
+2025-03-08 18:11:15.318 +05:00 [INF] Server desktop-a8i2h77:36728:e10011b0 successfully reported itself as stopped in 3,8962 ms
+2025-03-08 18:11:15.318 +05:00 [INF] Server desktop-a8i2h77:36728:e10011b0 has been stopped in total 10,3327 ms
+2025-03-08 18:11:15.423 +05:00 [INF] Bus stopped: "rabbitmq://localhost/"
+2025-03-08 18:12:04.159 +05:00 [INF] Start installing Hangfire SQL objects...
+2025-03-08 18:12:04.298 +05:00 [INF] Hangfire SQL objects installed.
+2025-03-08 18:12:04.922 +05:00 [INF] Configured endpoint task-created-queue, Consumer: TaskManagement.Application.Evets.TaskCreatedEventHandler
+2025-03-08 18:12:05.151 +05:00 [INF] Now listening on: http://localhost:5057
+2025-03-08 18:12:05.159 +05:00 [INF] Starting Hangfire Server using job storage: 'PostgreSQL Server: Host: localhost, DB: TaskManagementDb2, Schema: hangfire'
+2025-03-08 18:12:05.160 +05:00 [INF] Using the following options for PostgreSQL job storage:
+2025-03-08 18:12:05.161 +05:00 [INF]     Queue poll interval: 00:00:15.
+2025-03-08 18:12:05.162 +05:00 [INF]     Invisibility timeout: 00:30:00.
+2025-03-08 18:12:05.163 +05:00 [INF]     Use sliding invisibility timeout: False.
+2025-03-08 18:12:05.164 +05:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2025-03-08 18:12:05.188 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-08 18:12:05.190 +05:00 [INF] Hosting environment: Development
+2025-03-08 18:12:05.192 +05:00 [INF] Content root path: C:\С#\Test_TaskManagement\TaskManagement.WebAPI
+2025-03-08 18:12:05.222 +05:00 [INF] Server desktop-a8i2h77:31276:824f882f successfully announced in 26,3407 ms
+2025-03-08 18:12:05.229 +05:00 [INF] Server desktop-a8i2h77:31276:824f882f is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2025-03-08 18:12:05.245 +05:00 [INF] Server desktop-a8i2h77:31276:824f882f all the dispatchers started
+2025-03-08 18:12:05.672 +05:00 [INF] Bus started: "rabbitmq://localhost/"
+2025-03-08 18:12:05.880 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/swagger/index.html - null null
+2025-03-08 18:12:06.230 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/swagger/index.html - 200 null text/html;charset=utf-8 350.2142ms
+2025-03-08 18:12:06.359 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/swagger/v1/swagger.json - null null
+2025-03-08 18:12:06.550 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 192.1141ms
+2025-03-08 18:12:10.263 +05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5057/taskHub/negotiate?negotiateVersion=1 - null null
+2025-03-08 18:12:10.302 +05:00 [WRN] Failed to determine the https port for redirect.
+2025-03-08 18:12:10.311 +05:00 [INF] Executing endpoint '/taskHub/negotiate'
+2025-03-08 18:12:10.314 +05:00 [INF] Executed endpoint '/taskHub/negotiate'
+2025-03-08 18:12:10.315 +05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5057/taskHub/negotiate?negotiateVersion=1 - 405 0 text/plain 52.7124ms
+2025-03-08 18:12:59.665 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/taskHub - null null
+2025-03-08 18:12:59.669 +05:00 [INF] Executing endpoint '/taskHub'
+2025-03-08 18:12:59.681 +05:00 [INF] Executed endpoint '/taskHub'
+2025-03-08 18:12:59.683 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/taskHub - 400 null text/plain 17.8324ms
+2025-03-08 18:14:11.540 +05:00 [INF] Server desktop-a8i2h77:31276:824f882f caught stopping signal...
+2025-03-08 18:14:11.543 +05:00 [INF] Application is shutting down...
+2025-03-08 18:14:11.545 +05:00 [INF] Server desktop-a8i2h77:31276:824f882f All dispatchers stopped
+2025-03-08 18:14:11.564 +05:00 [INF] Server desktop-a8i2h77:31276:824f882f successfully reported itself as stopped in 14,5712 ms
+2025-03-08 18:14:11.565 +05:00 [INF] Server desktop-a8i2h77:31276:824f882f has been stopped in total 22,7731 ms
+2025-03-08 18:14:11.666 +05:00 [INF] Bus stopped: "rabbitmq://localhost/"
+2025-03-08 18:14:17.877 +05:00 [INF] Start installing Hangfire SQL objects...
+2025-03-08 18:14:18.003 +05:00 [INF] Hangfire SQL objects installed.
+2025-03-08 18:14:18.447 +05:00 [INF] Configured endpoint task-created-queue, Consumer: TaskManagement.Application.Evets.TaskCreatedEventHandler
+2025-03-08 18:14:18.662 +05:00 [INF] Now listening on: http://localhost:5057
+2025-03-08 18:14:18.671 +05:00 [INF] Starting Hangfire Server using job storage: 'PostgreSQL Server: Host: localhost, DB: TaskManagementDb2, Schema: hangfire'
+2025-03-08 18:14:18.673 +05:00 [INF] Using the following options for PostgreSQL job storage:
+2025-03-08 18:14:18.674 +05:00 [INF]     Queue poll interval: 00:00:15.
+2025-03-08 18:14:18.675 +05:00 [INF]     Invisibility timeout: 00:30:00.
+2025-03-08 18:14:18.676 +05:00 [INF]     Use sliding invisibility timeout: False.
+2025-03-08 18:14:18.677 +05:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2025-03-08 18:14:18.692 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-08 18:14:18.693 +05:00 [INF] Hosting environment: Development
+2025-03-08 18:14:18.694 +05:00 [INF] Content root path: C:\С#\Test_TaskManagement\TaskManagement.WebAPI
+2025-03-08 18:14:18.719 +05:00 [INF] Server desktop-a8i2h77:31540:8205f01c successfully announced in 22,8121 ms
+2025-03-08 18:14:18.724 +05:00 [INF] Server desktop-a8i2h77:31540:8205f01c is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2025-03-08 18:14:18.733 +05:00 [INF] Server desktop-a8i2h77:31540:8205f01c all the dispatchers started
+2025-03-08 18:14:19.100 +05:00 [INF] Bus started: "rabbitmq://localhost/"
+2025-03-08 18:14:19.230 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/swagger/index.html - null null
+2025-03-08 18:14:19.409 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/swagger/index.html - 200 null text/html;charset=utf-8 178.9519ms
+2025-03-08 18:14:19.509 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/swagger/v1/swagger.json - null null
+2025-03-08 18:14:19.679 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 170.8261ms
+2025-03-08 18:14:22.424 +05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5057/taskHub/negotiate?negotiateVersion=1 - null null
+2025-03-08 18:14:22.435 +05:00 [INF] CORS policy execution successful.
+2025-03-08 18:14:22.439 +05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5057/taskHub/negotiate?negotiateVersion=1 - 204 null null 15.3277ms
+2025-03-08 18:14:28.770 +05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5057/taskHub/negotiate?negotiateVersion=1 - null null
+2025-03-08 18:14:28.774 +05:00 [INF] CORS policy execution successful.
+2025-03-08 18:14:28.775 +05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5057/taskHub/negotiate?negotiateVersion=1 - 204 null null 5.2584ms
+2025-03-08 18:14:36.202 +05:00 [INF] Server desktop-a8i2h77:31540:8205f01c caught stopping signal...
+2025-03-08 18:14:36.204 +05:00 [INF] Application is shutting down...
+2025-03-08 18:14:36.206 +05:00 [INF] Server desktop-a8i2h77:31540:8205f01c All dispatchers stopped
+2025-03-08 18:14:36.230 +05:00 [INF] Server desktop-a8i2h77:31540:8205f01c successfully reported itself as stopped in 15,7618 ms
+2025-03-08 18:14:36.231 +05:00 [INF] Server desktop-a8i2h77:31540:8205f01c has been stopped in total 27,2304 ms
+2025-03-08 18:14:36.316 +05:00 [INF] Bus stopped: "rabbitmq://localhost/"

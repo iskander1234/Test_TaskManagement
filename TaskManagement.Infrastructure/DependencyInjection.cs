@@ -7,6 +7,7 @@ using TaskManagement.Application.Interfaces;
 using TaskManagement.Infrastructure.Caching;
 using TaskManagement.Infrastructure.Data;
 using TaskManagement.Infrastructure.Repositories;
+using TaskManagement.Infrastructure.Services;
 
 namespace TaskManagement.Infrastructure;
 
@@ -31,6 +32,9 @@ public static class DependencyInjection
 
         // Добавляем сервис кэша
         services.AddSingleton<ICacheService, RedisCacheService>();
+        
+        services.AddScoped<ISignalRService, SignalRService>();
+        services.AddSignalR(); // Подключаем SignalR
 
     }
 }

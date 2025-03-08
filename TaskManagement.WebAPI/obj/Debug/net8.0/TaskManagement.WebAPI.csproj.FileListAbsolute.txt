@@ -189,3 +189,5 @@ C:\С#\Test_TaskManagement\TaskManagement.WebAPI\bin\Debug\net8.0\MassTransit.Ab
 C:\С#\Test_TaskManagement\TaskManagement.WebAPI\bin\Debug\net8.0\MassTransit.RabbitMqTransport.dll
 C:\С#\Test_TaskManagement\TaskManagement.WebAPI\bin\Debug\net8.0\RabbitMQ.Client.dll
 C:\С#\Test_TaskManagement\TaskManagement.WebAPI\obj\Debug\net8.0\TaskManagement.WebAPI.sourcelink.json
+C:\С#\Test_TaskManagement\TaskManagement.WebAPI\bin\Debug\net8.0\Microsoft.Extensions.ObjectPool.dll
+C:\С#\Test_TaskManagement\TaskManagement.WebAPI\bin\Debug\net8.0\System.Net.WebSockets.WebSocketProtocol.dll
