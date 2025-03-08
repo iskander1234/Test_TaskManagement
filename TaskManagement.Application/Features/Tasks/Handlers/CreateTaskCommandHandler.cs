@@ -15,11 +15,13 @@ public class CreateTaskCommandHandler : IRequestHandler<CreateTaskCommand, Guid>
     private readonly IAppDbContext _context;
     private readonly IValidator<CreateTaskCommand> _validator; // Добавили валидатор
     private readonly IMapper _mapper; // Добавили AutoMapper
-    public CreateTaskCommandHandler(IAppDbContext context, IValidator<CreateTaskCommand> validator , IMapper mapper)
+    private readonly ICacheService _cacheService;
+    public CreateTaskCommandHandler(IAppDbContext context, IValidator<CreateTaskCommand> validator , IMapper mapper, ICacheService cacheService)
     {
         _context = context;
         _validator = validator;
         _mapper = mapper;
+        _cacheService = cacheService;
     }
 
     public async Task<Guid> Handle(CreateTaskCommand request, CancellationToken cancellationToken)
@@ -46,6 +48,9 @@ public class CreateTaskCommandHandler : IRequestHandler<CreateTaskCommand, Guid>
 
         _context.Tasks.Add(task);
         await _context.SaveChangesAsync(cancellationToken);
+        
+        // Очистка кэша после успешного создания задачи
+        await _cacheService.RemoveAsync("tasks");
 
         return task.Id;
     }

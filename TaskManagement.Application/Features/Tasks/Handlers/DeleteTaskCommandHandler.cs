@@ -7,10 +7,12 @@ namespace TaskManagement.Application.Features.Tasks.Handlers;
 public class DeleteTaskCommandHandler : IRequestHandler<DeleteTaskCommand, bool>
 {
     private readonly IAppDbContext _context;
+    private readonly ICacheService _cacheService; // Добавляем кэш
 
-    public DeleteTaskCommandHandler(IAppDbContext context)
+    public DeleteTaskCommandHandler(IAppDbContext context, ICacheService cacheService)
     {
         _context = context;
+        _cacheService = cacheService;
     }
 
     public async Task<bool> Handle(DeleteTaskCommand request, CancellationToken cancellationToken)
@@ -20,6 +22,10 @@ public class DeleteTaskCommandHandler : IRequestHandler<DeleteTaskCommand, bool>
 
         _context.Tasks.Remove(task);
         await _context.SaveChangesAsync(cancellationToken);
+        
+        // Очистка кэша после удаления задачи
+        await _cacheService.RemoveAsync("tasks");
+        
         return true;
     }
 }

@@ -30,7 +30,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-// Middleware для обработки ошибок
+//  Middleware для обработки ошибок
 app.UseMiddleware<ValidationExceptionMiddleware>();
 
 app.UseHttpsRedirection();
