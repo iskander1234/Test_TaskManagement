@@ -10,3 +10,4 @@ C:\С#\Test_TaskManagement\TaskManagement.Application\obj\Debug\net8.0\TaskManag
 C:\С#\Test_TaskManagement\TaskManagement.Application\obj\Debug\net8.0\refint\TaskManagement.Application.dll
 C:\С#\Test_TaskManagement\TaskManagement.Application\obj\Debug\net8.0\TaskManagement.Application.pdb
 C:\С#\Test_TaskManagement\TaskManagement.Application\obj\Debug\net8.0\ref\TaskManagement.Application.dll
+C:\С#\Test_TaskManagement\TaskManagement.Application\obj\Debug\net8.0\TaskManagement.Application.sourcelink.json

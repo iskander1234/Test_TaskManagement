@@ -184,3 +184,8 @@ C:\С#\Test_TaskManagement\TaskManagement.WebAPI\bin\Debug\net8.0\sv\Hangfire.Co
 C:\С#\Test_TaskManagement\TaskManagement.WebAPI\bin\Debug\net8.0\tr-TR\Hangfire.Core.resources.dll
 C:\С#\Test_TaskManagement\TaskManagement.WebAPI\bin\Debug\net8.0\zh-TW\Hangfire.Core.resources.dll
 C:\С#\Test_TaskManagement\TaskManagement.WebAPI\bin\Debug\net8.0\zh\Hangfire.Core.resources.dll
+C:\С#\Test_TaskManagement\TaskManagement.WebAPI\bin\Debug\net8.0\MassTransit.dll
+C:\С#\Test_TaskManagement\TaskManagement.WebAPI\bin\Debug\net8.0\MassTransit.Abstractions.dll
+C:\С#\Test_TaskManagement\TaskManagement.WebAPI\bin\Debug\net8.0\MassTransit.RabbitMqTransport.dll
+C:\С#\Test_TaskManagement\TaskManagement.WebAPI\bin\Debug\net8.0\RabbitMQ.Client.dll
+C:\С#\Test_TaskManagement\TaskManagement.WebAPI\obj\Debug\net8.0\TaskManagement.WebAPI.sourcelink.json

@@ -1,7 +1,9 @@
 ﻿using AutoMapper;
 using FluentValidation;
+using MassTransit;
 using MediatR;
 using TaskManagement.Application.Entities;
+using TaskManagement.Application.Evets;
 using TaskManagement.Application.Features.Tasks.Commands;
 using TaskManagement.Application.Interfaces;
 using TaskStatus = TaskManagement.Application.Entities.TaskStatus;
@@ -14,17 +16,20 @@ public class CreateTaskCommandHandler : IRequestHandler<CreateTaskCommand, Guid>
     private readonly ICacheService _cacheService;
     private readonly IValidator<CreateTaskCommand> _validator;
     private readonly IMapper _mapper;
+    private readonly IPublishEndpoint _publishEndpoint;
 
     public CreateTaskCommandHandler(
         ITaskRepository taskRepository,
         ICacheService cacheService,
         IValidator<CreateTaskCommand> validator,
-        IMapper mapper)
+        IMapper mapper,
+        IPublishEndpoint publishEndpoint)
     {
         _taskRepository = taskRepository;
         _cacheService = cacheService;
         _validator = validator;
         _mapper = mapper;
+        _publishEndpoint = publishEndpoint;
     }
 
     public async Task<Guid> Handle(CreateTaskCommand request, CancellationToken cancellationToken)
@@ -57,6 +62,10 @@ public class CreateTaskCommandHandler : IRequestHandler<CreateTaskCommand, Guid>
         string cacheKey = $"task_{task.Id}";
         await _cacheService.SetAsync(cacheKey, task, TimeSpan.FromMinutes(10));
         Console.WriteLine($"Сохранено в Redis: {cacheKey}");
+        
+        // Отправляем событие в RabbitMQ
+        await _publishEndpoint.Publish(new TaskCreatedEvent(task.Id, task.Title), cancellationToken);
+        Console.WriteLine($"Отправляем событие в RabbitMQ: {task.Id} - {task.Title}");
 
         return task.Id;
     }

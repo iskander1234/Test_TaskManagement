@@ -1,10 +1,12 @@
 using Hangfire;
 using Hangfire.PostgreSql;
+using MassTransit;
 using TaskManagement.Application;
 using TaskManagement.Infrastructure;
 using TaskManagement.WebAPI.Middlewares;
 using Serilog;
 using TaskManagement.Application.Background;
+using TaskManagement.Application.Evets;
 
 var builder = WebApplication.CreateBuilder(args);
 var configuration = builder.Configuration;
@@ -23,7 +25,7 @@ builder.Services.AddHangfire(config =>
     config.UsePostgreSqlStorage(configuration.GetConnectionString("DefaultConnection")));
 builder.Services.AddHangfireServer();
 
-// 📌 Добавляем BackgroundJobs в DI-контейнер
+// Добавляем BackgroundJobs в DI-контейнер
 builder.Services.AddScoped<BackgroundJobs>();
 
 // Настраиваем Serilog
@@ -31,6 +33,27 @@ builder.Host.UseSerilog((context, config) =>
 {
     config.WriteTo.Console();
     config.WriteTo.File("logs/log-.txt", rollingInterval: RollingInterval.Day);
+});
+
+//  Добавляем RabbitMQ через MassTransit
+builder.Services.AddMassTransit(x =>
+{
+    x.AddConsumer<TaskCreatedEventHandler>(); // Регистрируем Consumer
+
+    x.UsingRabbitMq((context, cfg) =>
+    {
+        cfg.Host("localhost", "/", h =>
+        {
+            h.Username("guest");
+            h.Password("guest");
+        });
+
+        // Добавляем очередь
+        cfg.ReceiveEndpoint("task-created-queue", e =>
+        {
+            e.ConfigureConsumer<TaskCreatedEventHandler>(context);
+        });
+    });
 });
 
 var app = builder.Build();
